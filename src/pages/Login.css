@@ -1,0 +1,296 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  background: #f3e9da;
+  color: #493b30;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* LEFT SECTION */
+
+.login-intro {
+  padding: 45px 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.brand small {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ad9273;
+}
+
+.brand-icon,
+.welcome-icon {
+  width: 43px;
+  height: 43px;
+  background: #e5d4bf;
+  color: #80684e;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.intro-content {
+  max-width: 550px;
+  margin: 65px 0;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #a18464;
+  margin-bottom: 18px;
+}
+
+.intro-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.intro-content h1 span {
+  color: #a58a6b;
+}
+
+.intro-description {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #897969;
+  max-width: 460px;
+}
+
+.feature-list {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #e9d9c5;
+  display: grid;
+  place-items: center;
+  color: #8c7458;
+}
+
+.feature-item h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feature-item p {
+  font-size: 12px;
+  color: #897969;
+}
+
+.intro-footer {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #a18b73;
+}
+
+/* RIGHT SECTION */
+
+.login-form-section {
+  background: #eee2d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 390px;
+  background: #faf7f1;
+  border: 1px solid #e5d7c5;
+  border-radius: 20px;
+  padding: 42px;
+  box-shadow: 0 15px 45px rgba(91, 69, 44, 0.06);
+}
+
+.welcome-icon {
+  margin-bottom: 28px;
+  width: 48px;
+  height: 48px;
+}
+
+.login-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-description {
+  color: #897969;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.login-card input,
+.login-card select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dfd0bd;
+  border-radius: 9px;
+  background: #fffdf9;
+  color: #493b30;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  margin-bottom: 22px;
+}
+
+.login-card input:focus,
+.login-card select:focus {
+  border-color: #ad9273;
+}
+
+.enter-button {
+  width: 100%;
+  padding: 15px;
+  background: #ad9273;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 5px;
+}
+
+.enter-button:hover {
+  background: #927858;
+}
+
+.enter-button span {
+  margin-left: 8px;
+}
+
+.privacy-note {
+  text-align: center;
+  color: #a18f7b;
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 22px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-intro {
+    padding: 35px 8%;
+  }
+
+  .intro-content {
+    margin: 55px 0;
+  }
+
+  .login-form-section {
+    padding: 45px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 24px;
+  }
+
+  .intro-content h1 {
+    font-size: 36px;
+  }
+}
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Decorative spine and molecular background */
+.login-background-art {
+  position: absolute;
+  left: -140px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left bottom;
+  opacity: 0.75;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Keep login content above the illustration */
+.login-intro,
+.login-form-section {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .login-background-art {
+    width: 150%;
+    height: 65%;
+    opacity: 0.35;
+    object-position: left bottom;
+  }
+}
+/* Shift introduction text away from the backbone */
+/* Move introduction content slightly right */
+.intro-content {
+  margin-left: 350px;
+  max-width: 400px;
+}
+
+@media (max-width: 850px) {
+  .intro-content {
+    margin-left: 0;
+  }
+}
