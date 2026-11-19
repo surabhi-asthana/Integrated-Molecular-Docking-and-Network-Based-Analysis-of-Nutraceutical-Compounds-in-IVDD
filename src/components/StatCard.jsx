@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+
 
 export default function StatCard({ title, value, description, icon: Icon }) {
   return (
@@ -7,7 +7,6 @@ export default function StatCard({ title, value, description, icon: Icon }) {
         <div className="stat-icon">
           <Icon size={21} />
         </div>
-        <ArrowUpRight size={18} className="muted-icon" />
       </div>
 
       <h2>{value}</h2>

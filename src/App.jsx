@@ -5,8 +5,12 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
+import Pathways from "./pages/Pathways";
+import Targets from "./pages/Targets";
+import Network from "./pages/Network";
 import CompoundProfile from "./pages/CompoundProfile";
 import "./App.css";
+
 function Placeholder({ title }) {
   return (
     <div className="panel">
@@ -50,11 +54,8 @@ export default function App() {
         element={<CompoundProfile />}
 />
 <Route path="/compounds" element={<Compounds />} />
-          <Route
-            path="/targets"
-            element={<Placeholder title="Protein Targets" />}
-          />
-
+          <Route path="/targets" element={<Targets />} />
+          <Route path="/pathways" element={<Pathways />} />
           <Route
             path="/results"
             element={<Placeholder title="Docking Results" />}
@@ -65,10 +66,7 @@ export default function App() {
             element={<Placeholder title="AI Interpretation" />}
           />
 
-          <Route
-            path="/network"
-            element={<Placeholder title="Network Analysis" />}
-          />
+                    <Route path="/network" element={<Network/>} />
 
           <Route
             path="/settings"

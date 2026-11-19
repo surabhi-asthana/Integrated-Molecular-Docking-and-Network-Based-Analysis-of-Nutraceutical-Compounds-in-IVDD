@@ -3,11 +3,11 @@ import {
   FlaskConical,
   Dna,
   Workflow,
-  ChartNoAxesCombined,
   BrainCircuit,
   Network,
   Settings,
-  Microscope
+  Microscope,
+  ChartNoAxesCombined,
 } from "lucide-react";
 
 import { NavLink } from "react-router-dom";
@@ -16,10 +16,10 @@ const menuItems = [
   { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
   { name: "Compounds", path: "/compounds", icon: FlaskConical },
   { name: "Protein Targets", path: "/targets", icon: Dna },
-  { name: "Docking Workspace", path: "/docking", icon: Workflow },
-  { name: "Docking Results", path: "/results", icon: ChartNoAxesCombined },
+  { name: "Pathways", path: "/pathways", icon: ChartNoAxesCombined },
+  { name: "Docking Analysis", path: "/docking", icon: Workflow },
+  { name: "Molecular Network", path: "/network", icon: Network },
   { name: "AI Interpretation", path: "/interpretation", icon: BrainCircuit },
-  { name: "Network Analysis", path: "/network", icon: Network }
 ];
 
 export default function Sidebar() {
@@ -42,7 +42,7 @@ export default function Sidebar() {
           <NavLink
             key={name}
             to={path}
-            end={path === "/"}
+            end
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
             }

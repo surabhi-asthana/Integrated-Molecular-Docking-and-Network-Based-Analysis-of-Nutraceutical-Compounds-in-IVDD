@@ -18,7 +18,7 @@ const stats = [
   },
   {
     title: "Protein Targets",
-    value: "16",
+    value: "10",
     description: "IVDD-associated targets",
     icon: Dna
   },

@@ -634,3 +634,402 @@
     font-size: 12px;
   }
 }
+/* PATHWAYS PAGE */
+
+.pathways-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pathways-page .page-heading h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin: 8px 0;
+  color: #493b30;
+}
+
+.pathways-page .page-heading p {
+  color: #897969;
+  font-size: 14px;
+}
+
+.section-eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #ad9273;
+  font-weight: 700;
+}
+
+.reference-banner {
+  background: #eee3d3;
+  border: 1px solid #dfd0bd;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.reference-banner strong {
+  color: #725b43;
+  font-size: 14px;
+}
+
+.reference-banner span {
+  color: #897969;
+  font-size: 13px;
+}
+
+.pathway-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.pathway-stat {
+  background: #faf7f1;
+  border: 1px solid #dfd0bd;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pathway-stat span {
+  color: #897969;
+  font-size: 13px;
+}
+
+.pathway-stat strong {
+  font-size: 28px;
+  color: #725b43;
+}
+
+.pathway-card {
+  background: #faf7f1;
+  border: 1px solid #dfd0bd;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.pathway-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.pathway-card-header h3 {
+  color: #493b30;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.pathway-card-header p {
+  color: #897969;
+  font-size: 12px;
+}
+
+.pathway-count {
+  background: #eee3d3;
+  color: #725b43;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.pathway-table-wrapper {
+  overflow-x: auto;
+}
+
+.pathway-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.pathway-table th {
+  color: #897969;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 13px 12px;
+  border-bottom: 1px solid #dfd0bd;
+}
+
+.pathway-table td {
+  padding: 15px 12px;
+  font-size: 13px;
+  color: #594b3f;
+  border-bottom: 1px solid #eee5d9;
+}
+
+.pathway-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pathway-table tbody tr:hover {
+  background: #f3eadf;
+}
+
+.additional-pathway-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pathway-tag {
+  background: #eee3d3;
+  color: #725b43;
+  border-radius: 20px;
+  padding: 9px 14px;
+  font-size: 12px;
+}
+
+.pathway-method-note {
+  background: #f0e8dd;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.pathway-method-note h3 {
+  color: #725b43;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.pathway-method-note p {
+  color: #897969;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .pathway-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-card {
+    padding: 16px;
+  }
+}
+/* ==============================
+   MOLECULAR NETWORK PAGE
+================================ */
+
+.network-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 35px;
+}
+
+/* Page heading */
+
+.network-page .page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.network-page .section-eyebrow {
+  color: #a48a6c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.network-page .page-heading h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #493b30;
+  margin: 8px 0;
+}
+
+.network-page .page-heading p {
+  color: #897969;
+  font-size: 14px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Reference banner */
+
+.network-page .reference-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 17px 20px;
+  background: #eee3d3;
+  border: 1px solid #dfd0bd;
+  border-left: 4px solid #ad9273;
+  border-radius: 10px;
+}
+
+.network-page .reference-banner strong {
+  font-size: 13px;
+  color: #604b38;
+}
+
+.network-page .reference-banner span {
+  font-size: 12px;
+  color: #897969;
+  line-height: 1.5;
+}
+
+/* Statistics */
+
+.network-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.network-stat-card {
+  background: #faf7f1;
+  border: 1px solid #dfd0bd;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.network-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(73, 59, 48, 0.07);
+}
+
+.network-stat-card span {
+  font-size: 12px;
+  color: #897969;
+}
+
+.network-stat-card strong {
+  font-size: 27px;
+  font-weight: 600;
+  color: #604b38;
+}
+
+/* Main panels */
+
+.network-panel {
+  background: #faf7f1;
+  border: 1px solid #dfd0bd;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.network-panel h3 {
+  font-size: 17px;
+  color: #493b30;
+  margin-bottom: 7px;
+}
+
+.network-panel > p {
+  font-size: 12px;
+  color: #897969;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Network visualization placeholder */
+
+.network-placeholder {
+  min-height: 340px;
+  background: #f3ece1;
+  border: 1px dashed #cbb79e;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.network-placeholder span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #604b38;
+}
+
+.network-placeholder small {
+  font-size: 12px;
+  color: #897969;
+}
+
+/* Hub genes */
+
+.hub-gene-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hub-gene {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 16px;
+  background: #eee3d3;
+  border: 1px solid #dfd0bd;
+  border-radius: 9px;
+}
+.hub-gene:hover {
+  background: #e5d3bd;
+  transform: translateY(-2px);
+}
+
+.hub-gene strong {
+  font-size: 13px;
+  color: #604b38;
+}
+
+/* Methodology */
+
+.network-note {
+  padding: 20px 22px;
+  background: #f0e8dc;
+  border-radius: 12px;
+  border: 1px solid #dfd0bd;
+}
+
+.network-note strong {
+  font-size: 13px;
+  color: #604b38;
+}
+
+.network-note p {
+  font-size: 12px;
+  color: #897969;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+  .network-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .network-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .network-panel {
+    padding: 17px;
+  }
+
+  .network-page .page-heading h1 {
+    font-size: 25px;
+  }
+}
