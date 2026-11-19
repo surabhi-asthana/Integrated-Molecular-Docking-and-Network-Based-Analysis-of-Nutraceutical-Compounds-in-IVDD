@@ -17,11 +17,10 @@ const menuItems = [
   { name: "Compounds", path: "/compounds", icon: FlaskConical },
   { name: "Protein Targets", path: "/targets", icon: Dna },
   { name: "Pathways", path: "/pathways", icon: ChartNoAxesCombined },
-  { name: "Docking Analysis", path: "/docking", icon: Workflow },
   { name: "Molecular Network", path: "/network", icon: Network },
+  { name: "Docking Analysis", path: "/docking", icon: Workflow },
   { name: "AI Interpretation", path: "/interpretation", icon: BrainCircuit },
 ];
-
 export default function Sidebar() {
   return (
     <aside className="sidebar">
