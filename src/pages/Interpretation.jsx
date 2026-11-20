@@ -1,8 +1,12 @@
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-
+import { getAskContext } from "../services/dockingContext";
+import { useActiveDocking } from "../services/activeDocking";
+import { PROTEINS, COMPOUNDS, nameOf } from "../data/proteins";
+import { cleanAnswer } from "../services/cleanAnswer";
 function Interpretation() {
+  const active = useActiveDocking();
   const [question, setQuestion] = useState("");
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -23,6 +27,7 @@ function Interpretation() {
     setLoading(true);
 
     try {
+      const context = await getAskContext("AI Interpretation");
       const response = await fetch(
         "http://127.0.0.1:5000/api/ask-ivdd",
         {
@@ -32,9 +37,7 @@ function Interpretation() {
           },
           body: JSON.stringify({
             question: userQuestion,
-            context: {
-              section: "AI Interpretation",
-            },
+            context,
           }),
         }
       );
@@ -47,7 +50,7 @@ function Interpretation() {
 
       setMessages((prev) => [
         ...prev,
-        { role: "ai", text: data.answer },
+        { role: "ai", text: cleanAnswer(data.answer) },
       ]);
     } catch (error) {
       setMessages((prev) => [
@@ -70,6 +73,11 @@ function Interpretation() {
           <p>
             Explore IVDD mechanisms, protein interactions,
             pathways and nutraceutical research.
+          </p>
+          <p className="active-docking-note">
+            {active
+              ? `Currently open on Docking page: ${nameOf(COMPOUNDS, active.compound)} & ${nameOf(PROTEINS, active.protein)}`
+              : "Tip: run a pair on the Docking page and ask about it here."}
           </p>
         </div>
 

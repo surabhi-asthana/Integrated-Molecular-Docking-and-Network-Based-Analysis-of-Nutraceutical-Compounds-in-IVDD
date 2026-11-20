@@ -1,0 +1,2750 @@
+{
+ "ADAMTS5": {
+  "baicalein": {
+   "contact_residues": [
+    "THR378",
+    "LEU379",
+    "GLY380",
+    "HIS410",
+    "GLU411",
+    "HIS414",
+    "HIS420",
+    "SER440",
+    "SER441",
+    "ILE442",
+    "LEU443",
+    "THR444",
+    "ILE446"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "HIS420",
+     "protein_atom": "NE2",
+     "ligand_atom": "O20",
+     "distance": 2.57
+    },
+    {
+     "residue": "GLY380",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 2.72
+    },
+    {
+     "residue": "LEU379",
+     "protein_atom": "N",
+     "ligand_atom": "O18",
+     "distance": 2.74
+    },
+    {
+     "residue": "GLY380",
+     "protein_atom": "N",
+     "ligand_atom": "O18",
+     "distance": 2.82
+    },
+    {
+     "residue": "LEU379",
+     "protein_atom": "N",
+     "ligand_atom": "O2",
+     "distance": 2.94
+    },
+    {
+     "residue": "GLY380",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 2.99
+    },
+    {
+     "residue": "SER440",
+     "protein_atom": "O",
+     "ligand_atom": "O1",
+     "distance": 3.15
+    },
+    {
+     "residue": "HIS410",
+     "protein_atom": "NE2",
+     "ligand_atom": "O20",
+     "distance": 3.34
+    },
+    {
+     "residue": "SER441",
+     "protein_atom": "O",
+     "ligand_atom": "O1",
+     "distance": 3.36
+    },
+    {
+     "residue": "HIS410",
+     "protein_atom": "ND1",
+     "ligand_atom": "O1",
+     "distance": 3.43
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU379",
+    "ILE442",
+    "LEU443",
+    "ILE446"
+   ],
+   "metal_ion_contacts": [
+    "Zn (ZN901) 1.77 Å from ligand"
+   ]
+  },
+  "curcumin": {
+   "contact_residues": [
+    "GLY372",
+    "HIS373",
+    "HIS374",
+    "SER375",
+    "ASP377",
+    "THR378",
+    "LEU379",
+    "GLY380",
+    "MET381",
+    "HIS410",
+    "GLU411",
+    "HIS414",
+    "HIS420",
+    "SER441",
+    "ILE442",
+    "LEU443"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "HIS420",
+     "protein_atom": "NE2",
+     "ligand_atom": "O26",
+     "distance": 2.63
+    },
+    {
+     "residue": "HIS414",
+     "protein_atom": "NE2",
+     "ligand_atom": "O28",
+     "distance": 2.71
+    },
+    {
+     "residue": "LEU443",
+     "protein_atom": "N",
+     "ligand_atom": "O12",
+     "distance": 2.96
+    },
+    {
+     "residue": "HIS374",
+     "protein_atom": "N",
+     "ligand_atom": "O17",
+     "distance": 2.97
+    },
+    {
+     "residue": "HIS373",
+     "protein_atom": "N",
+     "ligand_atom": "O17",
+     "distance": 2.99
+    },
+    {
+     "residue": "LEU443",
+     "protein_atom": "N",
+     "ligand_atom": "O14",
+     "distance": 3.15
+    },
+    {
+     "residue": "HIS373",
+     "protein_atom": "ND1",
+     "ligand_atom": "O17",
+     "distance": 3.2
+    },
+    {
+     "residue": "THR378",
+     "protein_atom": "OG1",
+     "ligand_atom": "O17",
+     "distance": 3.49
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "MET381",
+    "ILE442",
+    "LEU443"
+   ],
+   "metal_ion_contacts": [
+    "Zn (ZN901) 1.91 Å from ligand"
+   ]
+  },
+  "quercetin": {
+   "contact_residues": [
+    "THR378",
+    "LEU379",
+    "GLY380",
+    "HIS403",
+    "PHE406",
+    "THR407",
+    "HIS410",
+    "GLU411",
+    "HIS414",
+    "HIS420",
+    "ARG437",
+    "SER440",
+    "SER441",
+    "ILE442",
+    "LEU443",
+    "THR444",
+    "ILE446"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "THR444",
+     "protein_atom": "OG1",
+     "ligand_atom": "O26",
+     "distance": 2.66
+    },
+    {
+     "residue": "THR407",
+     "protein_atom": "OG1",
+     "ligand_atom": "O2",
+     "distance": 2.7
+    },
+    {
+     "residue": "HIS410",
+     "protein_atom": "NE2",
+     "ligand_atom": "O18",
+     "distance": 2.74
+    },
+    {
+     "residue": "THR407",
+     "protein_atom": "OG1",
+     "ligand_atom": "O22",
+     "distance": 2.75
+    },
+    {
+     "residue": "GLY380",
+     "protein_atom": "O",
+     "ligand_atom": "O20",
+     "distance": 2.88
+    },
+    {
+     "residue": "ILE442",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 3.08
+    },
+    {
+     "residue": "GLU411",
+     "protein_atom": "OE2",
+     "ligand_atom": "O18",
+     "distance": 3.29
+    },
+    {
+     "residue": "THR444",
+     "protein_atom": "N",
+     "ligand_atom": "O26",
+     "distance": 3.31
+    },
+    {
+     "residue": "HIS414",
+     "protein_atom": "NE2",
+     "ligand_atom": "O18",
+     "distance": 3.43
+    },
+    {
+     "residue": "ARG437",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 3.44
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "ILE442",
+    "LEU443",
+    "ILE446"
+   ],
+   "metal_ion_contacts": [
+    "Zn (ZN901) 1.86 Å from ligand"
+   ]
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "THR378",
+    "LEU379",
+    "GLY380",
+    "HIS410",
+    "GLU411",
+    "HIS414",
+    "HIS420",
+    "ARG437",
+    "LEU438",
+    "SER440",
+    "SER441",
+    "ILE442",
+    "LEU443",
+    "THR444",
+    "SER445",
+    "ILE446"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "HIS420",
+     "protein_atom": "NE2",
+     "ligand_atom": "O11",
+     "distance": 2.6
+    },
+    {
+     "residue": "GLY380",
+     "protein_atom": "N",
+     "ligand_atom": "O9",
+     "distance": 2.63
+    },
+    {
+     "residue": "LEU379",
+     "protein_atom": "N",
+     "ligand_atom": "O9",
+     "distance": 2.74
+    },
+    {
+     "residue": "GLY380",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 2.8
+    },
+    {
+     "residue": "THR444",
+     "protein_atom": "OG1",
+     "ligand_atom": "O19",
+     "distance": 2.8
+    },
+    {
+     "residue": "THR444",
+     "protein_atom": "O",
+     "ligand_atom": "O19",
+     "distance": 2.96
+    },
+    {
+     "residue": "THR444",
+     "protein_atom": "N",
+     "ligand_atom": "O19",
+     "distance": 3.02
+    },
+    {
+     "residue": "HIS410",
+     "protein_atom": "NE2",
+     "ligand_atom": "O11",
+     "distance": 3.27
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "ILE442",
+    "LEU443",
+    "ILE446"
+   ],
+   "metal_ion_contacts": [
+    "Zn (ZN901) 1.69 Å from ligand"
+   ]
+  }
+ },
+ "IKKB": {
+  "baicalein": {
+   "contact_residues": [
+    "LEU21",
+    "ASN28",
+    "VAL29",
+    "LYS44",
+    "MET96",
+    "TYR98",
+    "CYS99",
+    "VAL152",
+    "ILE165",
+    "ASP166"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ASP166",
+     "protein_atom": "OD1",
+     "ligand_atom": "O18",
+     "distance": 2.71
+    },
+    {
+     "residue": "ASP166",
+     "protein_atom": "OD1",
+     "ligand_atom": "O20",
+     "distance": 3.05
+    },
+    {
+     "residue": "ASN28",
+     "protein_atom": "ND2",
+     "ligand_atom": "O20",
+     "distance": 3.34
+    },
+    {
+     "residue": "LYS44",
+     "protein_atom": "NZ",
+     "ligand_atom": "O18",
+     "distance": 3.35
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU21",
+    "VAL29",
+    "TYR98",
+    "VAL152",
+    "ILE165"
+   ],
+   "metal_ion_contacts": []
+  },
+  "curcumin": {
+   "contact_residues": [
+    "LEU21",
+    "THR23",
+    "ASN28",
+    "VAL29",
+    "LYS44",
+    "MET96",
+    "TYR98",
+    "CYS99",
+    "ASP103",
+    "GLU149",
+    "VAL152",
+    "ILE165",
+    "ASP166"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ASP103",
+     "protein_atom": "OD1",
+     "ligand_atom": "O14",
+     "distance": 2.74
+    },
+    {
+     "residue": "CYS99",
+     "protein_atom": "O",
+     "ligand_atom": "O28",
+     "distance": 2.91
+    },
+    {
+     "residue": "CYS99",
+     "protein_atom": "N",
+     "ligand_atom": "O28",
+     "distance": 3.15
+    },
+    {
+     "residue": "ASP166",
+     "protein_atom": "OD1",
+     "ligand_atom": "O2",
+     "distance": 3.21
+    },
+    {
+     "residue": "ASN28",
+     "protein_atom": "ND2",
+     "ligand_atom": "O2",
+     "distance": 3.38
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU21",
+    "VAL29",
+    "VAL152",
+    "ILE165"
+   ],
+   "metal_ion_contacts": []
+  },
+  "melatonin": {
+   "contact_residues": [
+    "LEU21",
+    "VAL29",
+    "ALA42",
+    "MET96",
+    "GLU97",
+    "TYR98",
+    "CYS99",
+    "ASP103",
+    "GLU149",
+    "VAL152",
+    "ILE165"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "CYS99",
+     "protein_atom": "O",
+     "ligand_atom": "N1",
+     "distance": 3.1
+    },
+    {
+     "residue": "LEU21",
+     "protein_atom": "O",
+     "ligand_atom": "N16",
+     "distance": 3.22
+    },
+    {
+     "residue": "GLU149",
+     "protein_atom": "O",
+     "ligand_atom": "O15",
+     "distance": 3.31
+    },
+    {
+     "residue": "CYS99",
+     "protein_atom": "N",
+     "ligand_atom": "N1",
+     "distance": 3.46
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU21",
+    "VAL29",
+    "ALA42",
+    "TYR98",
+    "VAL152",
+    "ILE165"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "LEU21",
+    "GLY22",
+    "ASN28",
+    "VAL29",
+    "GLU97",
+    "TYR98",
+    "CYS99",
+    "VAL152",
+    "ILE165",
+    "ASP166"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ASN28",
+     "protein_atom": "OD1",
+     "ligand_atom": "O18",
+     "distance": 2.92
+    },
+    {
+     "residue": "GLU97",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 2.93
+    },
+    {
+     "residue": "ASP166",
+     "protein_atom": "OD1",
+     "ligand_atom": "O20",
+     "distance": 3.07
+    },
+    {
+     "residue": "CYS99",
+     "protein_atom": "N",
+     "ligand_atom": "O26",
+     "distance": 3.11
+    },
+    {
+     "residue": "LEU21",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 3.18
+    },
+    {
+     "residue": "ASN28",
+     "protein_atom": "ND2",
+     "ligand_atom": "O20",
+     "distance": 3.21
+    },
+    {
+     "residue": "LEU21",
+     "protein_atom": "O",
+     "ligand_atom": "O2",
+     "distance": 3.24
+    },
+    {
+     "residue": "ASN28",
+     "protein_atom": "ND2",
+     "ligand_atom": "O18",
+     "distance": 3.36
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU21",
+    "VAL29",
+    "TYR98",
+    "VAL152",
+    "ILE165"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "LEU21",
+    "VAL29",
+    "MET96",
+    "TYR98",
+    "CYS99",
+    "GLY102",
+    "ASP103",
+    "VAL152",
+    "ILE165",
+    "ASP166"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ASP103",
+     "protein_atom": "OD2",
+     "ligand_atom": "O7",
+     "distance": 2.93
+    },
+    {
+     "residue": "CYS99",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 2.95
+    },
+    {
+     "residue": "ASP166",
+     "protein_atom": "N",
+     "ligand_atom": "O19",
+     "distance": 2.98
+    },
+    {
+     "residue": "ASP103",
+     "protein_atom": "N",
+     "ligand_atom": "O7",
+     "distance": 3.08
+    },
+    {
+     "residue": "CYS99",
+     "protein_atom": "N",
+     "ligand_atom": "O9",
+     "distance": 3.22
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU21",
+    "VAL29",
+    "MET96",
+    "TYR98",
+    "VAL152",
+    "ILE165"
+   ],
+   "metal_ion_contacts": []
+  }
+ },
+ "IL1B": {
+  "baicalein": {
+   "contact_residues": [
+    "VAL3",
+    "SER45",
+    "PHE46",
+    "PRO57",
+    "VAL58",
+    "ALA59",
+    "LYS92",
+    "LYS93",
+    "LYS94",
+    "MET95",
+    "LYS97",
+    "VAL100"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "SER45",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 2.59
+    },
+    {
+     "residue": "LYS93",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 2.7
+    },
+    {
+     "residue": "MET95",
+     "protein_atom": "N",
+     "ligand_atom": "O2",
+     "distance": 3.05
+    },
+    {
+     "residue": "MET95",
+     "protein_atom": "N",
+     "ligand_atom": "O18",
+     "distance": 3.11
+    },
+    {
+     "residue": "PRO57",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 3.15
+    },
+    {
+     "residue": "LYS92",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 3.29
+    },
+    {
+     "residue": "ALA59",
+     "protein_atom": "N",
+     "ligand_atom": "O22",
+     "distance": 3.34
+    },
+    {
+     "residue": "LYS93",
+     "protein_atom": "O",
+     "ligand_atom": "O2",
+     "distance": 3.41
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "PRO57",
+    "MET95",
+    "VAL100"
+   ],
+   "metal_ion_contacts": []
+  },
+  "curcumin": {
+   "contact_residues": [
+    "SER45",
+    "GLU50",
+    "ASN53",
+    "LYS55",
+    "PRO57",
+    "VAL58",
+    "ALA59",
+    "LYS92",
+    "LYS93",
+    "LYS94",
+    "MET95",
+    "LYS97",
+    "VAL100",
+    "ASN102",
+    "ALA115"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "LYS93",
+     "protein_atom": "O",
+     "ligand_atom": "O29",
+     "distance": 2.82
+    },
+    {
+     "residue": "LYS92",
+     "protein_atom": "O",
+     "ligand_atom": "O29",
+     "distance": 3.09
+    },
+    {
+     "residue": "LYS55",
+     "protein_atom": "O",
+     "ligand_atom": "O15",
+     "distance": 3.29
+    },
+    {
+     "residue": "MET95",
+     "protein_atom": "N",
+     "ligand_atom": "O29",
+     "distance": 3.29
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "PRO57",
+    "VAL58",
+    "ALA59",
+    "MET95",
+    "VAL100",
+    "ALA115"
+   ],
+   "metal_ion_contacts": []
+  },
+  "melatonin": {
+   "contact_residues": [
+    "VAL3",
+    "SER45",
+    "PHE46",
+    "VAL47",
+    "PRO57",
+    "VAL58",
+    "ALA59",
+    "LYS94",
+    "MET95",
+    "LYS97",
+    "VAL100",
+    "ASN102",
+    "ALA115"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "MET95",
+     "protein_atom": "O",
+     "ligand_atom": "N1",
+     "distance": 2.82
+    },
+    {
+     "residue": "SER45",
+     "protein_atom": "O",
+     "ligand_atom": "O15",
+     "distance": 3.25
+    },
+    {
+     "residue": "ALA59",
+     "protein_atom": "N",
+     "ligand_atom": "O15",
+     "distance": 3.32
+    },
+    {
+     "residue": "MET95",
+     "protein_atom": "N",
+     "ligand_atom": "N1",
+     "distance": 3.4
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "VAL3",
+    "PHE46",
+    "PRO57",
+    "MET95",
+    "VAL100",
+    "ALA115"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "VAL3",
+    "SER45",
+    "PHE46",
+    "VAL47",
+    "PRO57",
+    "VAL58",
+    "ALA59",
+    "LYS92",
+    "LYS93",
+    "LYS94",
+    "MET95",
+    "LYS97",
+    "VAL100",
+    "ALA115"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "LYS93",
+     "protein_atom": "O",
+     "ligand_atom": "O24",
+     "distance": 2.54
+    },
+    {
+     "residue": "SER45",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 2.62
+    },
+    {
+     "residue": "LYS94",
+     "protein_atom": "NZ",
+     "ligand_atom": "O22",
+     "distance": 2.94
+    },
+    {
+     "residue": "ALA59",
+     "protein_atom": "N",
+     "ligand_atom": "O26",
+     "distance": 3.06
+    },
+    {
+     "residue": "LYS93",
+     "protein_atom": "O",
+     "ligand_atom": "O2",
+     "distance": 3.25
+    },
+    {
+     "residue": "LYS97",
+     "protein_atom": "NZ",
+     "ligand_atom": "O20",
+     "distance": 3.36
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "VAL47",
+    "PRO57",
+    "MET95",
+    "VAL100",
+    "ALA115"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "VAL3",
+    "SER45",
+    "PHE46",
+    "VAL47",
+    "PRO57",
+    "VAL58",
+    "ALA59",
+    "LYS92",
+    "LYS93",
+    "MET95",
+    "LYS97",
+    "VAL100"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "SER45",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 2.71
+    },
+    {
+     "residue": "LYS92",
+     "protein_atom": "O",
+     "ligand_atom": "O7",
+     "distance": 2.81
+    },
+    {
+     "residue": "LYS93",
+     "protein_atom": "O",
+     "ligand_atom": "O7",
+     "distance": 2.84
+    },
+    {
+     "residue": "PRO57",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 2.98
+    },
+    {
+     "residue": "LYS97",
+     "protein_atom": "NZ",
+     "ligand_atom": "O19",
+     "distance": 3.11
+    },
+    {
+     "residue": "ALA59",
+     "protein_atom": "N",
+     "ligand_atom": "O9",
+     "distance": 3.27
+    },
+    {
+     "residue": "VAL58",
+     "protein_atom": "N",
+     "ligand_atom": "O9",
+     "distance": 3.43
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "VAL47",
+    "PRO57",
+    "MET95",
+    "VAL100"
+   ],
+   "metal_ion_contacts": []
+  }
+ },
+ "IL6": {
+  "baicalein": {
+   "contact_residues": [
+    "A:LEU15",
+    "A:ASP16",
+    "A:SER19",
+    "B:GLN115",
+    "B:LEU118",
+    "B:ARG119"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "A:ASP16",
+     "protein_atom": "OD1",
+     "ligand_atom": "O20",
+     "distance": 2.72
+    },
+    {
+     "residue": "A:ASP16",
+     "protein_atom": "OD1",
+     "ligand_atom": "O18",
+     "distance": 2.79
+    },
+    {
+     "residue": "B:GLN115",
+     "protein_atom": "NE2",
+     "ligand_atom": "O1",
+     "distance": 2.92
+    },
+    {
+     "residue": "A:LEU15",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 2.99
+    },
+    {
+     "residue": "A:LEU15",
+     "protein_atom": "O",
+     "ligand_atom": "O20",
+     "distance": 3.22
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "A:LEU15",
+    "B:LEU118"
+   ],
+   "metal_ion_contacts": []
+  },
+  "curcumin": {
+   "contact_residues": [
+    "A:ARG12",
+    "A:LEU15",
+    "A:ASP16",
+    "A:ILE18",
+    "A:SER19",
+    "A:ARG22",
+    "B:LYS111",
+    "B:GLN115",
+    "B:LEU118",
+    "B:ARG119",
+    "B:ARG122"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "B:ARG119",
+     "protein_atom": "NE",
+     "ligand_atom": "O17",
+     "distance": 2.96
+    },
+    {
+     "residue": "B:ARG119",
+     "protein_atom": "NH1",
+     "ligand_atom": "O17",
+     "distance": 3.05
+    },
+    {
+     "residue": "A:ASP16",
+     "protein_atom": "OD1",
+     "ligand_atom": "O3",
+     "distance": 3.29
+    },
+    {
+     "residue": "A:ARG12",
+     "protein_atom": "NH1",
+     "ligand_atom": "O5",
+     "distance": 3.34
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "A:LEU15",
+    "A:ILE18",
+    "B:LEU118"
+   ],
+   "metal_ion_contacts": []
+  },
+  "melatonin": {
+   "contact_residues": [
+    "B:LYS6",
+    "B:MET7",
+    "B:PHE14",
+    "B:GLN15",
+    "B:GLU112",
+    "B:PHE113",
+    "B:SER116",
+    "B:ARG119"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "B:ARG119",
+     "protein_atom": "NH2",
+     "ligand_atom": "O11",
+     "distance": 3.13
+    },
+    {
+     "residue": "B:SER116",
+     "protein_atom": "OG",
+     "ligand_atom": "N16",
+     "distance": 3.17
+    },
+    {
+     "residue": "B:MET7",
+     "protein_atom": "O",
+     "ligand_atom": "O15",
+     "distance": 3.26
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "B:MET7",
+    "B:PHE14",
+    "B:PHE113"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "A:ARG12",
+    "A:LEU15",
+    "A:ASP16",
+    "B:GLN115",
+    "B:LEU118",
+    "B:ARG119"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "A:ASP16",
+     "protein_atom": "OD1",
+     "ligand_atom": "O20",
+     "distance": 2.86
+    },
+    {
+     "residue": "B:GLN115",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 2.89
+    },
+    {
+     "residue": "A:ARG12",
+     "protein_atom": "NH1",
+     "ligand_atom": "O22",
+     "distance": 2.92
+    },
+    {
+     "residue": "A:ARG12",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 2.94
+    },
+    {
+     "residue": "A:ASP16",
+     "protein_atom": "OD1",
+     "ligand_atom": "O18",
+     "distance": 3.03
+    },
+    {
+     "residue": "B:ARG119",
+     "protein_atom": "NH1",
+     "ligand_atom": "O26",
+     "distance": 3.14
+    },
+    {
+     "residue": "B:ARG119",
+     "protein_atom": "NE",
+     "ligand_atom": "O26",
+     "distance": 3.2
+    },
+    {
+     "residue": "A:ARG12",
+     "protein_atom": "NH2",
+     "ligand_atom": "O2",
+     "distance": 3.23
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "A:LEU15",
+    "B:LEU118"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "A:LEU15",
+    "A:ASP16",
+    "A:SER19",
+    "B:GLN115",
+    "B:LEU118",
+    "B:ARG119"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "A:ASP16",
+     "protein_atom": "OD1",
+     "ligand_atom": "O19",
+     "distance": 2.92
+    },
+    {
+     "residue": "B:GLN115",
+     "protein_atom": "O",
+     "ligand_atom": "O7",
+     "distance": 2.99
+    },
+    {
+     "residue": "A:LEU15",
+     "protein_atom": "O",
+     "ligand_atom": "O19",
+     "distance": 3.11
+    },
+    {
+     "residue": "B:ARG119",
+     "protein_atom": "NH1",
+     "ligand_atom": "O7",
+     "distance": 3.12
+    },
+    {
+     "residue": "B:ARG119",
+     "protein_atom": "NE",
+     "ligand_atom": "O7",
+     "distance": 3.16
+    },
+    {
+     "residue": "A:ASP16",
+     "protein_atom": "N",
+     "ligand_atom": "O19",
+     "distance": 3.44
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "A:LEU15",
+    "B:LEU118"
+   ],
+   "metal_ion_contacts": []
+  }
+ },
+ "MD2": {
+  "baicalein": {
+   "contact_residues": [
+    "LEU61",
+    "ILE63",
+    "LEU71",
+    "LEU74",
+    "PHE76",
+    "ILE94",
+    "TYR102",
+    "PHE104",
+    "VAL113",
+    "THR115",
+    "ILE117"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "TYR102",
+     "protein_atom": "OH",
+     "ligand_atom": "O22",
+     "distance": 3.05
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU61",
+    "ILE63",
+    "LEU71",
+    "LEU74",
+    "PHE76",
+    "ILE94",
+    "TYR102",
+    "PHE104",
+    "VAL113",
+    "ILE117"
+   ],
+   "metal_ion_contacts": []
+  },
+  "curcumin": {
+   "contact_residues": [
+    "ILE46",
+    "LEU61",
+    "ILE63",
+    "TYR65",
+    "LEU71",
+    "LEU74",
+    "PHE76",
+    "ILE94",
+    "TYR102",
+    "PHE104",
+    "ILE117",
+    "VAL135",
+    "PHE147",
+    "PHE151"
+   ],
+   "possible_hydrogen_bonds": [],
+   "hydrophobic_contact_residues": [
+    "ILE46",
+    "LEU61",
+    "ILE63",
+    "LEU74",
+    "PHE76",
+    "ILE94",
+    "TYR102",
+    "PHE104",
+    "ILE117",
+    "VAL135",
+    "PHE147",
+    "PHE151"
+   ],
+   "metal_ion_contacts": []
+  },
+  "melatonin": {
+   "contact_residues": [
+    "ILE44",
+    "ILE46",
+    "ILE63",
+    "TYR65",
+    "LEU71",
+    "LEU74",
+    "PHE76",
+    "LEU78",
+    "PHE104",
+    "VAL135",
+    "PHE147",
+    "LEU149",
+    "PHE151"
+   ],
+   "possible_hydrogen_bonds": [],
+   "hydrophobic_contact_residues": [
+    "ILE44",
+    "ILE46",
+    "ILE63",
+    "TYR65",
+    "LEU71",
+    "PHE76",
+    "PHE104",
+    "VAL135",
+    "PHE147",
+    "LEU149",
+    "PHE151"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "LEU61",
+    "ILE63",
+    "LEU71",
+    "LEU74",
+    "PHE76",
+    "ILE94",
+    "TYR102",
+    "PHE104",
+    "VAL113",
+    "ILE117",
+    "LEU146",
+    "PHE147"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "TYR102",
+     "protein_atom": "OH",
+     "ligand_atom": "O26",
+     "distance": 2.94
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU61",
+    "ILE63",
+    "LEU71",
+    "LEU74",
+    "PHE76",
+    "ILE94",
+    "TYR102",
+    "PHE104",
+    "ILE117"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "ILE44",
+    "ILE46",
+    "LEU61",
+    "ILE63",
+    "TYR65",
+    "LEU71",
+    "LEU74",
+    "PHE76",
+    "VAL135",
+    "PHE147",
+    "LEU149",
+    "PHE151"
+   ],
+   "possible_hydrogen_bonds": [],
+   "hydrophobic_contact_residues": [
+    "ILE44",
+    "ILE46",
+    "ILE63",
+    "TYR65",
+    "PHE76",
+    "VAL135",
+    "PHE147",
+    "LEU149",
+    "PHE151"
+   ],
+   "metal_ion_contacts": []
+  }
+ },
+ "MMP13": {
+  "baicalein": {
+   "contact_residues": [
+    "LEU218",
+    "VAL219",
+    "HIS222",
+    "PRO236",
+    "GLY237",
+    "ALA238",
+    "LEU239",
+    "PHE241",
+    "ILE243",
+    "TYR244",
+    "THR245",
+    "PHE252"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "GLY237",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 2.88
+    },
+    {
+     "residue": "THR245",
+     "protein_atom": "OG1",
+     "ligand_atom": "O2",
+     "distance": 3.09
+    },
+    {
+     "residue": "PRO236",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 3.34
+    },
+    {
+     "residue": "GLY237",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 3.49
+    },
+    {
+     "residue": "ILE243",
+     "protein_atom": "O",
+     "ligand_atom": "O2",
+     "distance": 3.49
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU218",
+    "VAL219",
+    "LEU239",
+    "ILE243",
+    "TYR244"
+   ],
+   "metal_ion_contacts": []
+  },
+  "curcumin": {
+   "contact_residues": [
+    "LEU185",
+    "LEU218",
+    "VAL219",
+    "HIS222",
+    "GLU223",
+    "GLY237",
+    "ALA238",
+    "LEU239",
+    "PHE241",
+    "PRO242",
+    "ILE243",
+    "TYR244",
+    "THR245",
+    "TYR246",
+    "LYS249",
+    "SER250",
+    "HIS251",
+    "PHE252",
+    "MET253"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "GLU223",
+     "protein_atom": "OE2",
+     "ligand_atom": "O28",
+     "distance": 2.97
+    },
+    {
+     "residue": "THR245",
+     "protein_atom": "N",
+     "ligand_atom": "O17",
+     "distance": 3.05
+    },
+    {
+     "residue": "LYS249",
+     "protein_atom": "O",
+     "ligand_atom": "O14",
+     "distance": 3.17
+    },
+    {
+     "residue": "SER250",
+     "protein_atom": "O",
+     "ligand_atom": "O14",
+     "distance": 3.17
+    },
+    {
+     "residue": "THR245",
+     "protein_atom": "OG1",
+     "ligand_atom": "O17",
+     "distance": 3.2
+    },
+    {
+     "residue": "THR245",
+     "protein_atom": "O",
+     "ligand_atom": "O17",
+     "distance": 3.22
+    },
+    {
+     "residue": "LYS249",
+     "protein_atom": "NZ",
+     "ligand_atom": "O12",
+     "distance": 3.28
+    },
+    {
+     "residue": "HIS251",
+     "protein_atom": "O",
+     "ligand_atom": "O12",
+     "distance": 3.28
+    },
+    {
+     "residue": "PRO242",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 3.3
+    },
+    {
+     "residue": "ALA238",
+     "protein_atom": "O",
+     "ligand_atom": "O3",
+     "distance": 3.35
+    },
+    {
+     "residue": "PHE252",
+     "protein_atom": "N",
+     "ligand_atom": "O14",
+     "distance": 3.39
+    },
+    {
+     "residue": "ILE243",
+     "protein_atom": "O",
+     "ligand_atom": "O17",
+     "distance": 3.49
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU185",
+    "LEU218",
+    "VAL219",
+    "LEU239",
+    "ILE243",
+    "TYR244",
+    "TYR246",
+    "PHE252",
+    "MET253"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "LEU218",
+    "HIS222",
+    "PRO236",
+    "GLY237",
+    "ALA238",
+    "LEU239",
+    "PHE241",
+    "PRO242",
+    "ILE243",
+    "TYR244",
+    "THR245",
+    "PHE252",
+    "MET253",
+    "PRO255"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ILE243",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 2.72
+    },
+    {
+     "residue": "PHE241",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 2.89
+    },
+    {
+     "residue": "THR245",
+     "protein_atom": "OG1",
+     "ligand_atom": "O2",
+     "distance": 2.99
+    },
+    {
+     "residue": "MET253",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 3.08
+    },
+    {
+     "residue": "THR245",
+     "protein_atom": "OG1",
+     "ligand_atom": "O22",
+     "distance": 3.1
+    },
+    {
+     "residue": "THR245",
+     "protein_atom": "N",
+     "ligand_atom": "O22",
+     "distance": 3.12
+    },
+    {
+     "residue": "PRO242",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 3.27
+    },
+    {
+     "residue": "TYR244",
+     "protein_atom": "N",
+     "ligand_atom": "O18",
+     "distance": 3.27
+    },
+    {
+     "residue": "GLY237",
+     "protein_atom": "O",
+     "ligand_atom": "O24",
+     "distance": 3.36
+    },
+    {
+     "residue": "ILE243",
+     "protein_atom": "N",
+     "ligand_atom": "O18",
+     "distance": 3.44
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU218",
+    "LEU239",
+    "ILE243",
+    "TYR244",
+    "PHE252",
+    "PRO255"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "LEU218",
+    "VAL219",
+    "HIS222",
+    "GLU223",
+    "PRO236",
+    "ALA238",
+    "LEU239",
+    "PHE241",
+    "PRO242",
+    "ILE243",
+    "TYR244",
+    "THR245"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "THR245",
+     "protein_atom": "OG1",
+     "ligand_atom": "O9",
+     "distance": 3.09
+    },
+    {
+     "residue": "PRO236",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 3.13
+    },
+    {
+     "residue": "GLU223",
+     "protein_atom": "OE2",
+     "ligand_atom": "O19",
+     "distance": 3.21
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU218",
+    "VAL219",
+    "LEU239",
+    "ILE243",
+    "TYR244"
+   ],
+   "metal_ion_contacts": []
+  }
+ },
+ "MMP7": {
+  "baicalein": {
+   "contact_residues": [
+    "ASN179",
+    "THR180",
+    "ALA182",
+    "TYR215",
+    "ALA216",
+    "HIS219",
+    "GLU220",
+    "PRO239",
+    "THR240",
+    "TYR241"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "THR180",
+     "protein_atom": "OG1",
+     "ligand_atom": "O22",
+     "distance": 2.82
+    },
+    {
+     "residue": "ASN179",
+     "protein_atom": "O",
+     "ligand_atom": "O20",
+     "distance": 2.95
+    },
+    {
+     "residue": "ALA182",
+     "protein_atom": "O",
+     "ligand_atom": "O2",
+     "distance": 3.49
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "TYR215",
+    "ALA216",
+    "TYR241"
+   ],
+   "metal_ion_contacts": [
+    "Zn (ZN1267) 3.49 Å from ligand"
+   ]
+  },
+  "curcumin": {
+   "contact_residues": [
+    "ASN179",
+    "THR180",
+    "LEU181",
+    "ALA182",
+    "HIS183",
+    "ALA184",
+    "TRP203",
+    "TYR215",
+    "ALA216",
+    "HIS219",
+    "GLU220",
+    "HIS223",
+    "PRO239",
+    "TYR241"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ALA184",
+     "protein_atom": "O",
+     "ligand_atom": "O14",
+     "distance": 2.94
+    },
+    {
+     "residue": "ALA184",
+     "protein_atom": "N",
+     "ligand_atom": "O14",
+     "distance": 3.04
+    },
+    {
+     "residue": "THR180",
+     "protein_atom": "OG1",
+     "ligand_atom": "O3",
+     "distance": 3.07
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU181",
+    "ALA182",
+    "TRP203",
+    "ALA216",
+    "TYR241"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "LEU181",
+    "ALA182",
+    "TYR215",
+    "ALA216",
+    "HIS219",
+    "GLU220",
+    "VAL236",
+    "TYR238",
+    "PRO239",
+    "THR240",
+    "TYR241"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ALA182",
+     "protein_atom": "N",
+     "ligand_atom": "O22",
+     "distance": 2.83
+    },
+    {
+     "residue": "ALA182",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 2.88
+    },
+    {
+     "residue": "THR240",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 2.97
+    },
+    {
+     "residue": "TYR238",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 3.22
+    },
+    {
+     "residue": "HIS219",
+     "protein_atom": "ND1",
+     "ligand_atom": "O26",
+     "distance": 3.28
+    },
+    {
+     "residue": "LEU181",
+     "protein_atom": "N",
+     "ligand_atom": "O22",
+     "distance": 3.37
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "LEU181",
+    "TYR215",
+    "PRO239",
+    "TYR241"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "ASN179",
+    "THR180",
+    "LEU181",
+    "ALA182",
+    "TYR215",
+    "ALA216",
+    "HIS219",
+    "VAL236",
+    "TYR238",
+    "PRO239",
+    "THR240",
+    "TYR241"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "THR180",
+     "protein_atom": "OG1",
+     "ligand_atom": "O19",
+     "distance": 2.81
+    },
+    {
+     "residue": "TYR238",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 3.01
+    },
+    {
+     "residue": "THR240",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 3.01
+    },
+    {
+     "residue": "HIS219",
+     "protein_atom": "ND1",
+     "ligand_atom": "O9",
+     "distance": 3.13
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "TYR215",
+    "PRO239",
+    "TYR241"
+   ],
+   "metal_ion_contacts": []
+  }
+ },
+ "NLRP3": {
+  "baicalein": {
+   "contact_residues": [
+    "ALA228",
+    "PRO352",
+    "PHE410",
+    "ILE411",
+    "THR439",
+    "TYR443",
+    "PHE575",
+    "ARG578",
+    "TYR632",
+    "MET661",
+    "ASP662"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "TYR632",
+     "protein_atom": "OH",
+     "ligand_atom": "O18",
+     "distance": 2.81
+    },
+    {
+     "residue": "TYR632",
+     "protein_atom": "OH",
+     "ligand_atom": "O2",
+     "distance": 2.88
+    },
+    {
+     "residue": "ASP662",
+     "protein_atom": "OD1",
+     "ligand_atom": "O18",
+     "distance": 3.26
+    },
+    {
+     "residue": "ARG578",
+     "protein_atom": "NH1",
+     "ligand_atom": "O1",
+     "distance": 3.31
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "ILE411",
+    "PHE575",
+    "TYR632"
+   ],
+   "metal_ion_contacts": []
+  },
+  "curcumin": {
+   "contact_residues": [
+    "ALA227",
+    "ALA228",
+    "ARG351",
+    "VAL353",
+    "GLU369",
+    "ILE574",
+    "PHE575",
+    "ARG578",
+    "GLN624",
+    "PRO625",
+    "SER626",
+    "GLU629",
+    "SER658",
+    "THR659",
+    "ASP662"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "SER626",
+     "protein_atom": "N",
+     "ligand_atom": "O28",
+     "distance": 2.81
+    },
+    {
+     "residue": "ASP662",
+     "protein_atom": "OD2",
+     "ligand_atom": "O14",
+     "distance": 2.84
+    },
+    {
+     "residue": "ARG351",
+     "protein_atom": "NE",
+     "ligand_atom": "O17",
+     "distance": 2.85
+    },
+    {
+     "residue": "SER626",
+     "protein_atom": "OG",
+     "ligand_atom": "O26",
+     "distance": 2.98
+    },
+    {
+     "residue": "ALA228",
+     "protein_atom": "N",
+     "ligand_atom": "O3",
+     "distance": 3.13
+    },
+    {
+     "residue": "GLN624",
+     "protein_atom": "O",
+     "ligand_atom": "O28",
+     "distance": 3.14
+    },
+    {
+     "residue": "SER626",
+     "protein_atom": "OG",
+     "ligand_atom": "O28",
+     "distance": 3.19
+    },
+    {
+     "residue": "ARG351",
+     "protein_atom": "NH1",
+     "ligand_atom": "O17",
+     "distance": 3.22
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "ALA227",
+    "VAL353",
+    "ILE574",
+    "PHE575"
+   ],
+   "metal_ion_contacts": []
+  },
+  "melatonin": {
+   "contact_residues": [
+    "ALA227",
+    "ALA228",
+    "ARG351",
+    "PRO352",
+    "VAL353",
+    "MET408",
+    "ILE411",
+    "LEU413",
+    "VAL414",
+    "THR439",
+    "TYR443",
+    "THR524",
+    "PHE575",
+    "ARG578",
+    "TYR632"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ARG351",
+     "protein_atom": "NE",
+     "ligand_atom": "O17",
+     "distance": 2.83
+    },
+    {
+     "residue": "ALA228",
+     "protein_atom": "N",
+     "ligand_atom": "O17",
+     "distance": 3.06
+    },
+    {
+     "residue": "ALA228",
+     "protein_atom": "O",
+     "ligand_atom": "O12",
+     "distance": 3.48
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "ALA227",
+    "PRO352",
+    "VAL353",
+    "MET408",
+    "ILE411",
+    "LEU413",
+    "VAL414",
+    "PHE575",
+    "TYR632"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "ALA227",
+    "ALA228",
+    "ARG351",
+    "PRO352",
+    "VAL353",
+    "ILE574",
+    "PHE575",
+    "ARG578",
+    "GLU629",
+    "TYR632"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "ARG351",
+     "protein_atom": "NH1",
+     "ligand_atom": "O22",
+     "distance": 2.88
+    },
+    {
+     "residue": "ALA228",
+     "protein_atom": "N",
+     "ligand_atom": "O24",
+     "distance": 2.93
+    },
+    {
+     "residue": "ALA228",
+     "protein_atom": "N",
+     "ligand_atom": "O2",
+     "distance": 2.97
+    },
+    {
+     "residue": "ARG351",
+     "protein_atom": "NE",
+     "ligand_atom": "O22",
+     "distance": 3.09
+    },
+    {
+     "residue": "ALA228",
+     "protein_atom": "O",
+     "ligand_atom": "O24",
+     "distance": 3.17
+    },
+    {
+     "residue": "TYR632",
+     "protein_atom": "OH",
+     "ligand_atom": "O26",
+     "distance": 3.29
+    },
+    {
+     "residue": "PRO352",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 3.33
+    },
+    {
+     "residue": "ARG578",
+     "protein_atom": "NH2",
+     "ligand_atom": "O1",
+     "distance": 3.38
+    },
+    {
+     "residue": "ARG351",
+     "protein_atom": "NE",
+     "ligand_atom": "O2",
+     "distance": 3.4
+    },
+    {
+     "residue": "VAL353",
+     "protein_atom": "N",
+     "ligand_atom": "O18",
+     "distance": 3.43
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "ALA227",
+    "PRO352",
+    "VAL353",
+    "ILE574",
+    "PHE575"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "ALA228",
+    "MET408",
+    "PHE410",
+    "ILE411",
+    "VAL414",
+    "THR439",
+    "TYR443",
+    "PHE575",
+    "ARG578",
+    "GLU629",
+    "TYR632",
+    "THR659",
+    "ASP662"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "TYR443",
+     "protein_atom": "OH",
+     "ligand_atom": "O19",
+     "distance": 2.88
+    },
+    {
+     "residue": "THR659",
+     "protein_atom": "OG1",
+     "ligand_atom": "O9",
+     "distance": 2.97
+    },
+    {
+     "residue": "ASP662",
+     "protein_atom": "OD1",
+     "ligand_atom": "O9",
+     "distance": 3.01
+    },
+    {
+     "residue": "ARG578",
+     "protein_atom": "NH2",
+     "ligand_atom": "O11",
+     "distance": 3.13
+    },
+    {
+     "residue": "TYR632",
+     "protein_atom": "OH",
+     "ligand_atom": "O9",
+     "distance": 3.17
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "MET408",
+    "PHE410",
+    "ILE411",
+    "VAL414",
+    "PHE575",
+    "TYR632"
+   ],
+   "metal_ion_contacts": []
+  }
+ },
+ "STAT3": {
+  "baicalein": {
+   "contact_residues": [
+    "GLU638",
+    "TYR640",
+    "GLN644",
+    "GLY656",
+    "TYR657",
+    "LYS658"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "LYS658",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 2.7
+    },
+    {
+     "residue": "LYS658",
+     "protein_atom": "N",
+     "ligand_atom": "O22",
+     "distance": 2.87
+    },
+    {
+     "residue": "GLY656",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 2.88
+    },
+    {
+     "residue": "TYR640",
+     "protein_atom": "OH",
+     "ligand_atom": "O1",
+     "distance": 2.89
+    },
+    {
+     "residue": "GLY656",
+     "protein_atom": "O",
+     "ligand_atom": "O20",
+     "distance": 3.06
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "TYR640",
+    "TYR657"
+   ],
+   "metal_ion_contacts": []
+  },
+  "curcumin": {
+   "contact_residues": [
+    "LYS591",
+    "GLU594",
+    "ARG609",
+    "SER611",
+    "GLU612",
+    "SER613",
+    "THR620",
+    "ILE634",
+    "GLN635",
+    "SER636",
+    "VAL637",
+    "GLU638",
+    "PRO639"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "GLU594",
+     "protein_atom": "OE1",
+     "ligand_atom": "O28",
+     "distance": 2.82
+    },
+    {
+     "residue": "SER611",
+     "protein_atom": "OG",
+     "ligand_atom": "O14",
+     "distance": 3.07
+    },
+    {
+     "residue": "GLU612",
+     "protein_atom": "N",
+     "ligand_atom": "O14",
+     "distance": 3.07
+    },
+    {
+     "residue": "SER613",
+     "protein_atom": "OG",
+     "ligand_atom": "O12",
+     "distance": 3.07
+    },
+    {
+     "residue": "GLU638",
+     "protein_atom": "N",
+     "ligand_atom": "O3",
+     "distance": 3.1
+    },
+    {
+     "residue": "ARG609",
+     "protein_atom": "NH2",
+     "ligand_atom": "O14",
+     "distance": 3.29
+    },
+    {
+     "residue": "ARG609",
+     "protein_atom": "NH1",
+     "ligand_atom": "O26",
+     "distance": 3.44
+    },
+    {
+     "residue": "SER636",
+     "protein_atom": "O",
+     "ligand_atom": "O3",
+     "distance": 3.44
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "PRO639"
+   ],
+   "metal_ion_contacts": []
+  },
+  "melatonin": {
+   "contact_residues": [
+    "ARG609",
+    "SER611",
+    "GLU612",
+    "SER613",
+    "THR620",
+    "SER636",
+    "VAL637",
+    "GLU638",
+    "PRO639"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "VAL637",
+     "protein_atom": "O",
+     "ligand_atom": "N10",
+     "distance": 2.84
+    },
+    {
+     "residue": "SER613",
+     "protein_atom": "OG",
+     "ligand_atom": "O17",
+     "distance": 2.96
+    },
+    {
+     "residue": "SER611",
+     "protein_atom": "OG",
+     "ligand_atom": "O12",
+     "distance": 3.07
+    },
+    {
+     "residue": "SER613",
+     "protein_atom": "OG",
+     "ligand_atom": "O12",
+     "distance": 3.14
+    },
+    {
+     "residue": "SER613",
+     "protein_atom": "N",
+     "ligand_atom": "O12",
+     "distance": 3.2
+    },
+    {
+     "residue": "GLU612",
+     "protein_atom": "N",
+     "ligand_atom": "O12",
+     "distance": 3.28
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "PRO639"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "VAL637",
+    "GLU638",
+    "PRO639",
+    "TYR640",
+    "GLN644",
+    "TYR657",
+    "LYS658"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "PRO639",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 2.85
+    },
+    {
+     "residue": "GLU638",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 2.87
+    },
+    {
+     "residue": "TYR657",
+     "protein_atom": "OH",
+     "ligand_atom": "O2",
+     "distance": 2.99
+    },
+    {
+     "residue": "LYS658",
+     "protein_atom": "O",
+     "ligand_atom": "O24",
+     "distance": 3.04
+    },
+    {
+     "residue": "GLN644",
+     "protein_atom": "OE1",
+     "ligand_atom": "O18",
+     "distance": 3.05
+    },
+    {
+     "residue": "GLN644",
+     "protein_atom": "OE1",
+     "ligand_atom": "O20",
+     "distance": 3.17
+    },
+    {
+     "residue": "TYR640",
+     "protein_atom": "N",
+     "ligand_atom": "O18",
+     "distance": 3.38
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "VAL637",
+    "TYR640",
+    "TYR657"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "TRP623",
+    "SER636",
+    "VAL637",
+    "GLU638",
+    "TYR640",
+    "GLN644",
+    "TYR657",
+    "ILE659"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "SER636",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 2.89
+    },
+    {
+     "residue": "GLN644",
+     "protein_atom": "NE2",
+     "ligand_atom": "O19",
+     "distance": 2.99
+    },
+    {
+     "residue": "GLN644",
+     "protein_atom": "OE1",
+     "ligand_atom": "O19",
+     "distance": 3.19
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "VAL637",
+    "TYR640",
+    "ILE659"
+   ],
+   "metal_ion_contacts": []
+  }
+ },
+ "TNFA": {
+  "baicalein": {
+   "contact_residues": [
+    "A:TYR59",
+    "B:TYR59",
+    "A:SER60",
+    "B:SER60",
+    "A:GLN61",
+    "A:TYR119",
+    "B:TYR119",
+    "A:LEU120",
+    "B:LEU120",
+    "A:GLY121",
+    "A:TYR151",
+    "B:TYR151"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "A:TYR151",
+     "protein_atom": "OH",
+     "ligand_atom": "O18",
+     "distance": 2.69
+    },
+    {
+     "residue": "A:GLN61",
+     "protein_atom": "OE1",
+     "ligand_atom": "O20",
+     "distance": 2.79
+    },
+    {
+     "residue": "A:TYR151",
+     "protein_atom": "OH",
+     "ligand_atom": "O20",
+     "distance": 2.93
+    },
+    {
+     "residue": "A:LEU120",
+     "protein_atom": "O",
+     "ligand_atom": "O2",
+     "distance": 3.34
+    },
+    {
+     "residue": "A:SER60",
+     "protein_atom": "O",
+     "ligand_atom": "O2",
+     "distance": 3.47
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "B:TYR59",
+    "B:TYR119",
+    "A:TYR119",
+    "A:LEU120",
+    "B:TYR151"
+   ],
+   "metal_ion_contacts": []
+  },
+  "curcumin": {
+   "contact_residues": [
+    "A:TYR59",
+    "B:TYR59",
+    "A:SER60",
+    "A:GLN61",
+    "A:TYR119",
+    "B:TYR119",
+    "A:LEU120",
+    "B:LEU120",
+    "A:GLY121",
+    "B:GLY121",
+    "A:TYR151",
+    "B:TYR151"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "A:TYR151",
+     "protein_atom": "OH",
+     "ligand_atom": "O2",
+     "distance": 3.08
+    },
+    {
+     "residue": "A:GLY121",
+     "protein_atom": "O",
+     "ligand_atom": "O28",
+     "distance": 3.24
+    },
+    {
+     "residue": "B:LEU120",
+     "protein_atom": "O",
+     "ligand_atom": "O14",
+     "distance": 3.34
+    },
+    {
+     "residue": "A:GLY121",
+     "protein_atom": "O",
+     "ligand_atom": "O26",
+     "distance": 3.4
+    },
+    {
+     "residue": "B:TYR151",
+     "protein_atom": "OH",
+     "ligand_atom": "O28",
+     "distance": 3.46
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "B:TYR59",
+    "A:TYR119",
+    "B:TYR119",
+    "A:LEU120"
+   ],
+   "metal_ion_contacts": []
+  },
+  "melatonin": {
+   "contact_residues": [
+    "A:LEU57",
+    "B:TYR59",
+    "B:SER60",
+    "A:TYR119",
+    "B:TYR119",
+    "A:LEU120",
+    "B:LEU120",
+    "A:GLY121",
+    "B:GLY121",
+    "A:GLY122",
+    "B:TYR151"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "B:LEU120",
+     "protein_atom": "O",
+     "ligand_atom": "N16",
+     "distance": 3.14
+    },
+    {
+     "residue": "B:SER60",
+     "protein_atom": "O",
+     "ligand_atom": "N16",
+     "distance": 3.38
+    },
+    {
+     "residue": "A:LEU120",
+     "protein_atom": "O",
+     "ligand_atom": "N1",
+     "distance": 3.39
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "A:LEU57",
+    "B:TYR59",
+    "B:TYR119",
+    "A:TYR119",
+    "B:LEU120",
+    "A:LEU120",
+    "B:TYR151"
+   ],
+   "metal_ion_contacts": []
+  },
+  "quercetin": {
+   "contact_residues": [
+    "B:TYR59",
+    "B:SER60",
+    "A:GLN61",
+    "B:GLN61",
+    "A:TYR119",
+    "B:TYR119",
+    "A:LEU120",
+    "B:LEU120",
+    "A:GLY121",
+    "A:TYR151",
+    "B:TYR151"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "A:TYR151",
+     "protein_atom": "OH",
+     "ligand_atom": "O24",
+     "distance": 2.7
+    },
+    {
+     "residue": "B:LEU120",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 2.7
+    },
+    {
+     "residue": "B:SER60",
+     "protein_atom": "O",
+     "ligand_atom": "O20",
+     "distance": 3.0
+    },
+    {
+     "residue": "B:SER60",
+     "protein_atom": "O",
+     "ligand_atom": "O18",
+     "distance": 3.01
+    },
+    {
+     "residue": "B:LEU120",
+     "protein_atom": "N",
+     "ligand_atom": "O18",
+     "distance": 3.09
+    },
+    {
+     "residue": "A:GLN61",
+     "protein_atom": "OE1",
+     "ligand_atom": "O24",
+     "distance": 3.16
+    },
+    {
+     "residue": "A:LEU120",
+     "protein_atom": "O",
+     "ligand_atom": "O22",
+     "distance": 3.17
+    },
+    {
+     "residue": "B:SER60",
+     "protein_atom": "N",
+     "ligand_atom": "O20",
+     "distance": 3.44
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "A:TYR119",
+    "B:TYR119",
+    "A:LEU120"
+   ],
+   "metal_ion_contacts": []
+  },
+  "resveratrol": {
+   "contact_residues": [
+    "B:TYR59",
+    "B:SER60",
+    "A:GLN61",
+    "B:GLN61",
+    "A:TYR119",
+    "B:TYR119",
+    "A:LEU120",
+    "B:LEU120",
+    "A:GLY121",
+    "A:TYR151",
+    "B:TYR151"
+   ],
+   "possible_hydrogen_bonds": [
+    {
+     "residue": "B:LEU120",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 2.71
+    },
+    {
+     "residue": "B:SER60",
+     "protein_atom": "O",
+     "ligand_atom": "O9",
+     "distance": 2.75
+    },
+    {
+     "residue": "B:TYR151",
+     "protein_atom": "OH",
+     "ligand_atom": "O7",
+     "distance": 2.76
+    },
+    {
+     "residue": "A:TYR151",
+     "protein_atom": "OH",
+     "ligand_atom": "O19",
+     "distance": 2.91
+    },
+    {
+     "residue": "A:GLN61",
+     "protein_atom": "OE1",
+     "ligand_atom": "O19",
+     "distance": 2.95
+    },
+    {
+     "residue": "A:GLY121",
+     "protein_atom": "N",
+     "ligand_atom": "O7",
+     "distance": 2.96
+    },
+    {
+     "residue": "B:SER60",
+     "protein_atom": "N",
+     "ligand_atom": "O9",
+     "distance": 3.0
+    },
+    {
+     "residue": "A:LEU120",
+     "protein_atom": "N",
+     "ligand_atom": "O7",
+     "distance": 3.43
+    },
+    {
+     "residue": "A:TYR119",
+     "protein_atom": "O",
+     "ligand_atom": "O7",
+     "distance": 3.48
+    }
+   ],
+   "hydrophobic_contact_residues": [
+    "B:TYR59",
+    "A:TYR119",
+    "B:TYR119"
+   ],
+   "metal_ion_contacts": []
+  }
+ }
+}

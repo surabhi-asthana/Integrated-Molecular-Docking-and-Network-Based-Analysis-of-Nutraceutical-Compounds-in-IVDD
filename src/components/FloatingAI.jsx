@@ -1,8 +1,11 @@
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-
+import { useLocation } from "react-router-dom";
+import { getAskContext } from "../services/dockingContext";
+import { cleanAnswer } from "../services/cleanAnswer";
 function FloatingAI() {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [question, setQuestion] = useState("");
   const [messages, setMessages] = useState([]);
@@ -24,6 +27,9 @@ function FloatingAI() {
     setLoading(true);
 
     try {
+      const context = await getAskContext("Floating AI Assistant", {
+              current_page: location.pathname,
+            });
       const response = await fetch(
         "http://127.0.0.1:5000/api/ask-ivdd",
         {
@@ -33,9 +39,7 @@ function FloatingAI() {
           },
           body: JSON.stringify({
             question: userQuestion,
-            context: {
-              section: "Floating AI Assistant",
-            },
+            context,
           }),
         }
       );
@@ -48,7 +52,7 @@ function FloatingAI() {
 
       setMessages((prev) => [
         ...prev,
-        { role: "ai", text: data.answer },
+        { role: "ai", text: cleanAnswer(data.answer) },
       ]);
 
     } catch (error) {

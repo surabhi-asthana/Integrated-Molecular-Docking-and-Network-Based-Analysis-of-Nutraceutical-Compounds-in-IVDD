@@ -3,6 +3,7 @@ import CompoundSelector from "../components/CompoundSelector";
 import ProteinSelector from "../components/ProteinSelector";
 import DockingViewer from "../components/DockingViewer";
 import { PROTEINS, COMPOUNDS, nameOf } from "../data/proteins";
+import { setActiveDocking } from "../services/activeDocking";
 function Docking() {
   const [selectedCompound, setSelectedCompound] = useState("");
   const [selectedProtein, setSelectedProtein] = useState("");
@@ -46,6 +47,11 @@ function Docking() {
 
     // alert("Selections captured! Backend integration comes next.");
     setResults({ compound: selectedCompound, protein: selectedProtein });
+    setActiveDocking({
+      compound: selectedCompound,
+      protein: selectedProtein,
+      displayed_affinity: affinities?.[selectedProtein]?.[selectedCompound]?.score?.toFixed(1),
+    });
   };
 const compoundName = results ? nameOf(COMPOUNDS, results.compound) : "";
 const proteinName = results ? nameOf(PROTEINS, results.protein) : "";
