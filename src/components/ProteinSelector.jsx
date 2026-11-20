@@ -1,6 +1,5 @@
 import { PROTEINS as proteins } from "../data/proteins";
 
-
 function ProteinSelector({ selected, onToggle }) {
   return (
     <div className="selector-section">

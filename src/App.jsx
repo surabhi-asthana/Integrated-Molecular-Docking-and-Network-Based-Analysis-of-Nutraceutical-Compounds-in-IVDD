@@ -1,12 +1,18 @@
-import { BrowserRouter, Routes, Route, Outlet, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet, Navigate, useLocation } from "react-router-dom";
 import Compounds from "./pages/Compounds";
 import Docking from "./pages/Docking";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
+import Pathways from "./pages/Pathways";
+import Targets from "./pages/Targets";
+import Interpretation from "./pages/Interpretation";
+import Network from "./pages/Network";
 import CompoundProfile from "./pages/CompoundProfile";
 import "./App.css";
+import FloatingAI from "./components/FloatingAI";
+
 function Placeholder({ title }) {
   return (
     <div className="panel">
@@ -18,6 +24,8 @@ function Placeholder({ title }) {
 
 // Layout used only after login
 function DashboardLayout() {
+  const location = useLocation();
+
   return (
     <div className="app-layout">
       <Sidebar />
@@ -29,6 +37,8 @@ function DashboardLayout() {
           <Outlet />
         </div>
       </main>
+
+      {location.pathname !== "/interpretation" && <FloatingAI />}
     </div>
   );
 }
@@ -50,25 +60,16 @@ export default function App() {
         element={<CompoundProfile />}
 />
 <Route path="/compounds" element={<Compounds />} />
-          <Route
-            path="/targets"
-            element={<Placeholder title="Protein Targets" />}
-          />
-
+          <Route path="/targets" element={<Targets />} />
+          <Route path="/pathways" element={<Pathways />} />
           <Route
             path="/results"
             element={<Placeholder title="Docking Results" />}
           />
 
-          <Route
-            path="/interpretation"
-            element={<Placeholder title="AI Interpretation" />}
-          />
+          <Route path="/interpretation" element={<Interpretation />} />
 
-          <Route
-            path="/network"
-            element={<Placeholder title="Network Analysis" />}
-          />
+                    <Route path="/network" element={<Network/>} />
 
           <Route
             path="/settings"
