@@ -1,0 +1,26 @@
+MODEL 1
+REMARK VINA RESULT:    -10.282      0.000      0.000
+COMPND    resveratrol
+AUTHOR    CONVERTED FROM AUTODOCK PDBQT
+HETATM    1  C   UNL A   1      13.060   2.209  -5.273  1.00  0.00           C
+HETATM    2  C   UNL A   1      12.033   2.356  -4.404  1.00  0.00           C
+HETATM    3  C   UNL A   1      14.487   2.193  -4.905  1.00  0.00           C
+HETATM    4  C   UNL A   1      16.396   3.292  -3.953  1.00  0.00           C
+HETATM    5  C   UNL A   1      15.046   3.308  -4.302  1.00  0.00           C
+HETATM    6  C   UNL A   1      17.170   2.161  -4.213  1.00  0.00           C
+HETATM    7  C   UNL A   1      16.593   1.046  -4.821  1.00  0.00           C
+HETATM    8  C   UNL A   1      15.243   1.062  -5.170  1.00  0.00           C
+HETATM    9  O   UNL A   1      16.960   4.380  -3.360  1.00  0.00           O
+HETATM   10  H   UNL A   1      17.722   4.091  -2.830  1.00  0.00           H
+HETATM   11  O   UNL A   1      17.348  -0.059  -5.073  1.00  0.00           O
+HETATM   12  H   UNL A   1      16.857  -0.848  -4.788  1.00  0.00           H
+HETATM   13  C   UNL A   1      10.625   2.392  -4.769  1.00  0.00           C
+HETATM   14  C   UNL A   1      10.151   1.585  -5.801  1.00  0.00           C
+HETATM   15  C   UNL A   1       9.749   3.236  -4.085  1.00  0.00           C
+HETATM   16  C   UNL A   1       8.801   1.619  -6.151  1.00  0.00           C
+HETATM   17  C   UNL A   1       8.400   3.271  -4.434  1.00  0.00           C
+HETATM   18  C   UNL A   1       7.925   2.462  -5.467  1.00  0.00           C
+HETATM   19  O   UNL A   1       6.608   2.497  -5.808  1.00  0.00           O
+HETATM   20  H   UNL A   1       6.492   2.046  -6.662  1.00  0.00           H
+ENDMDL
+END

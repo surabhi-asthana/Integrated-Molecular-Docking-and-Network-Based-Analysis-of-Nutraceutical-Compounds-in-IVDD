@@ -798,3 +798,32 @@ button {
   object-fit: contain;
   mix-blend-mode: multiply;
 }
+
+.reset-view-button {
+  background: transparent;
+  color: #927858;
+  border: 1.5px solid #ad9273;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.reset-view-button:hover {
+  background: #ad9273;
+  color: white;
+}
+
+.reset-view-button:active {
+  background: #927858;
+  border-color: #927858;
+  color: white;
+}
+
+.selection-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,302 @@
+{
+  "MD2": {
+    "curcumin": {
+      "score": -8.0,
+      "source": "dock40_curcumin_s2.pdbqt",
+      "model": 1,
+      "runs": 3
+    },
+    "quercetin": {
+      "score": -6.9,
+      "source": "dock40_quercetin_s1.pdbqt",
+      "model": 1,
+      "runs": 3
+    },
+    "melatonin": {
+      "score": -6.8,
+      "source": "dock40_melatonin_s1.pdbqt",
+      "model": 1,
+      "runs": 3
+    },
+    "resveratrol": {
+      "score": -7.8,
+      "source": "dock40_resveratrol_s1.pdbqt",
+      "model": 1,
+      "runs": 3
+    },
+    "baicalein": {
+      "score": -7.9,
+      "source": "dock40_baicalein_s1.pdbqt",
+      "model": 1,
+      "runs": 3
+    }
+  },
+  "TNFA": {
+    "curcumin": {
+      "score": -7.3,
+      "source": "curcumin_s2_out.pdbqt",
+      "model": 1,
+      "runs": 3
+    },
+    "quercetin": {
+      "score": -7.9,
+      "source": "quercetin_s1_out.pdbqt",
+      "model": 1,
+      "runs": 3
+    },
+    "melatonin": {
+      "score": -6.7,
+      "source": "melatonin_s1_out.pdbqt",
+      "model": 1,
+      "runs": 3
+    },
+    "resveratrol": {
+      "score": -7.1,
+      "source": "resveratrol_s1_out.pdbqt",
+      "model": 1,
+      "runs": 3
+    },
+    "baicalein": {
+      "score": -7.7,
+      "source": "baicalein_s1_out.pdbqt",
+      "model": 1,
+      "runs": 3
+    }
+  },
+  "IKKB": {
+    "curcumin": {
+      "score": -8.7,
+      "source": "curcumin_dock_seed1.pdbqt",
+      "model": 1,
+      "runs": 5
+    },
+    "quercetin": {
+      "score": -9.1,
+      "source": "quercetin_dock_seed1.pdbqt",
+      "model": 1,
+      "runs": 5
+    },
+    "melatonin": {
+      "score": -7.4,
+      "source": "melatonin_dock_seed1.pdbqt",
+      "model": 1,
+      "runs": 5
+    },
+    "resveratrol": {
+      "score": -8.6,
+      "source": "resveratrol_dock_seed1.pdbqt",
+      "model": 1,
+      "runs": 5
+    },
+    "baicalein": {
+      "score": -9.1,
+      "source": "baicalein_dock_seed1.pdbqt",
+      "model": 1,
+      "runs": 5
+    }
+  },
+  "STAT3": {
+    "quercetin": {
+      "score": -6.26,
+      "validation": "not tested"
+    },
+    "resveratrol": {
+      "score": -5.79,
+      "validation": "not tested"
+    },
+    "curcumin": {
+      "score": -5.71,
+      "validation": "not tested"
+    },
+    "melatonin": {
+      "score": -5.06,
+      "validation": "not tested"
+    },
+    "baicalein": {
+      "score": -6.34,
+      "validation": "not tested"
+    }
+  },
+  "NLRP3": {
+    "quercetin": {
+      "score": -8.16,
+      "validation": "redocking RMSD 8.6 A - setup not validated"
+    },
+    "resveratrol": {
+      "score": -7.34,
+      "validation": "redocking RMSD 8.6 A - setup not validated"
+    },
+    "curcumin": {
+      "score": -8.02,
+      "validation": "redocking RMSD 8.6 A - setup not validated"
+    },
+    "melatonin": {
+      "score": -6.57,
+      "validation": "redocking RMSD 8.6 A - setup not validated"
+    },
+    "baicalein": {
+      "score": -8.22,
+      "validation": "redocking RMSD 8.6 A - setup not validated"
+    }
+  },
+  "IL1B": {
+    "curcumin": {
+      "score": -6.805,
+      "validation": "redocking of crystal ligand T9C: RMSD 0.84 A (passed)",
+      "note": "two near-equal poses ~9 A apart; pose is one of two options"
+    },
+    "quercetin": {
+      "score": -7.207,
+      "validation": "redocking of crystal ligand T9C: RMSD 0.84 A (passed)"
+    },
+    "melatonin": {
+      "score": -6.62,
+      "validation": "redocking of crystal ligand T9C: RMSD 0.84 A (passed)"
+    },
+    "resveratrol": {
+      "score": -6.894,
+      "validation": "redocking of crystal ligand T9C: RMSD 0.84 A (passed)"
+    },
+    "baicalein": {
+      "score": -7.52,
+      "validation": "redocking of crystal ligand T9C: RMSD 0.84 A (passed)"
+    }
+  },
+  "IL6": {
+    "curcumin": {
+      "score": -6.327,
+      "validation": "not validated - no crystal ligand, site from literature residues"
+    },
+    "quercetin": {
+      "score": -6.741,
+      "validation": "not validated - no crystal ligand, site from literature residues"
+    },
+    "melatonin": {
+      "score": -5.306,
+      "validation": "not validated - no crystal ligand, site from literature residues",
+      "note": "no real preference for this site; pose unreliable"
+    },
+    "resveratrol": {
+      "score": -5.841,
+      "validation": "not validated - no crystal ligand, site from literature residues"
+    },
+    "baicalein": {
+      "score": -6.478,
+      "validation": "not validated - no crystal ligand, site from literature residues"
+    }
+  },
+  "MMP13": {
+    "curcumin": {
+      "score": -10.225,
+      "source": "curcumin_run_3.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "vina",
+      "pdb_id": "3WV3",
+      "validation": "redocked native WLL: 1.89 A RMSD (Vina), 10/10 runs"
+    },
+    "quercetin": {
+      "score": -10.035,
+      "source": "quercetin_run_5.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "vina",
+      "pdb_id": "3WV3",
+      "validation": "redocked native WLL: 1.89 A RMSD (Vina), 10/10 runs"
+    },
+    "baicalein": {
+      "score": -9.437,
+      "source": "baicalein_run_5.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "vina",
+      "pdb_id": "3WV3",
+      "validation": "redocked native WLL: 1.89 A RMSD (Vina), 10/10 runs"
+    },
+    "resveratrol": {
+      "score": -8.633,
+      "source": "resveratrol_run_2.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "vina",
+      "pdb_id": "3WV3",
+      "validation": "redocked native WLL: 1.89 A RMSD (Vina), 10/10 runs"
+    }
+  },
+  "MMP7": {
+    "curcumin": {
+      "score": -7.103,
+      "source": "curcumin_run_1.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "vina",
+      "pdb_id": "2Y6C",
+      "validation": "native TQI redocking performed (see 03_redocking_validation)"
+    },
+    "quercetin": {
+      "score": -7.77,
+      "source": "quercetin_run_8.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "vina",
+      "pdb_id": "2Y6C",
+      "validation": "native TQI redocking performed (see 03_redocking_validation)"
+    },
+    "baicalein": {
+      "score": -7.308,
+      "source": "baicalein_run_1.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "vina",
+      "pdb_id": "2Y6C",
+      "validation": "native TQI redocking performed (see 03_redocking_validation)"
+    },
+    "resveratrol": {
+      "score": -6.515,
+      "source": "resveratrol_run_6.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "vina",
+      "pdb_id": "2Y6C",
+      "validation": "native TQI redocking performed (see 03_redocking_validation)"
+    }
+  },
+  "ADAMTS5": {
+    "curcumin": {
+      "score": -10.659,
+      "source": "curcumin_seed5.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "ad4",
+      "pdb_id": "3HYG",
+      "validation": "redocked native 099: best RMSD 0.35 A (AutoDock4Zn maps), 10/10 runs <2 A"
+    },
+    "quercetin": {
+      "score": -9.067,
+      "source": "quercetin_seed5.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "ad4",
+      "pdb_id": "3HYG",
+      "validation": "redocked native 099: best RMSD 0.35 A (AutoDock4Zn maps), 10/10 runs <2 A"
+    },
+    "baicalein": {
+      "score": -9.581,
+      "source": "baicalein_seed8.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "ad4",
+      "pdb_id": "3HYG",
+      "validation": "redocked native 099: best RMSD 0.35 A (AutoDock4Zn maps), 10/10 runs <2 A"
+    },
+    "resveratrol": {
+      "score": -10.282,
+      "source": "resveratrol_seed10.pdbqt",
+      "model": 1,
+      "runs": 10,
+      "scoring": "ad4",
+      "pdb_id": "3HYG",
+      "validation": "redocked native 099: best RMSD 0.35 A (AutoDock4Zn maps), 10/10 runs <2 A"
+    }
+  }
+}

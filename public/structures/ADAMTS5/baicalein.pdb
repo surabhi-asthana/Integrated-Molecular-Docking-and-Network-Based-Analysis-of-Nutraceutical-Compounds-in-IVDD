@@ -1,0 +1,29 @@
+MODEL 1
+REMARK VINA RESULT:     -9.581      0.000      0.000
+COMPND    baicalein
+AUTHOR    CONVERTED FROM AUTODOCK PDBQT
+HETATM    1  O   UNL A   1      13.014   1.832  -4.949  1.00  0.00           O
+HETATM    2  O   UNL A   1      14.445   5.350  -3.473  1.00  0.00           O
+HETATM    3  C   UNL A   1      14.917   3.166  -4.244  1.00  0.00           C
+HETATM    4  C   UNL A   1      14.361   1.991  -4.746  1.00  0.00           C
+HETATM    5  C   UNL A   1      12.170   2.885  -4.632  1.00  0.00           C
+HETATM    6  C   UNL A   1      16.297   3.272  -4.058  1.00  0.00           C
+HETATM    7  C   UNL A   1      14.025   4.289  -3.915  1.00  0.00           C
+HETATM    8  C   UNL A   1      12.584   4.068  -4.149  1.00  0.00           C
+HETATM    9  C   UNL A   1      15.185   0.912  -5.067  1.00  0.00           C
+HETATM   10  C   UNL A   1      17.119   2.191  -4.381  1.00  0.00           C
+HETATM   11  C   UNL A   1      16.564   1.014  -4.883  1.00  0.00           C
+HETATM   12  C   UNL A   1      10.743   2.610  -4.894  1.00  0.00           C
+HETATM   13  C   UNL A   1       9.761   3.120  -4.041  1.00  0.00           C
+HETATM   14  C   UNL A   1      10.367   1.837  -5.995  1.00  0.00           C
+HETATM   15  C   UNL A   1       8.413   2.860  -4.287  1.00  0.00           C
+HETATM   16  C   UNL A   1       9.020   1.577  -6.243  1.00  0.00           C
+HETATM   17  C   UNL A   1       8.043   2.088  -5.389  1.00  0.00           C
+HETATM   18  O   UNL A   1      16.876   4.406  -3.569  1.00  0.00           O
+HETATM   19  H   UNL A   1      17.752   4.215  -3.202  1.00  0.00           H
+HETATM   20  O   UNL A   1      17.360  -0.047  -5.199  1.00  0.00           O
+HETATM   21  H   UNL A   1      17.058  -0.818  -4.687  1.00  0.00           H
+HETATM   22  O   UNL A   1      18.469   2.282  -4.204  1.00  0.00           O
+HETATM   23  H   UNL A   1      18.653   3.049  -3.633  1.00  0.00           H
+ENDMDL
+END

@@ -1,0 +1,35 @@
+MODEL 1
+REMARK VINA RESULT:    -10.659      0.000      0.000
+COMPND    curcumin
+AUTHOR    CONVERTED FROM AUTODOCK PDBQT
+HETATM    1  C   UNL A   1      20.133   6.007  -8.884  1.00  0.00           C
+HETATM    2  C   UNL A   1      19.120   5.546  -9.913  1.00  0.00           C
+HETATM    3  O   UNL A   1      19.418   5.336 -11.086  1.00  0.00           O
+HETATM    4  C   UNL A   1      17.737   5.313  -9.401  1.00  0.00           C
+HETATM    5  C   UNL A   1      17.391   5.723  -8.173  1.00  0.00           C
+HETATM    6  C   UNL A   1      16.059   5.533  -7.571  1.00  0.00           C
+HETATM    7  C   UNL A   1      13.669   5.657  -7.744  1.00  0.00           C
+HETATM    8  C   UNL A   1      14.929   5.837  -8.314  1.00  0.00           C
+HETATM    9  C   UNL A   1      13.556   5.178  -6.439  1.00  0.00           C
+HETATM   10  C   UNL A   1      14.703   4.877  -5.704  1.00  0.00           C
+HETATM   11  C   UNL A   1      15.963   5.056  -6.274  1.00  0.00           C
+HETATM   12  O   UNL A   1      12.556   5.955  -8.471  1.00  0.00           O
+HETATM   13  C   UNL A   1      12.071   7.293  -8.396  1.00  0.00           C
+HETATM   14  O   UNL A   1      12.331   4.998  -5.872  1.00  0.00           O
+HETATM   15  H   UNL A   1      11.656   5.091  -6.566  1.00  0.00           H
+HETATM   16  C   UNL A   1      21.065   4.931  -8.362  1.00  0.00           C
+HETATM   17  O   UNL A   1      22.288   5.022  -8.439  1.00  0.00           O
+HETATM   18  C   UNL A   1      20.405   3.767  -7.701  1.00  0.00           C
+HETATM   19  C   UNL A   1      20.497   3.597  -6.374  1.00  0.00           C
+HETATM   20  C   UNL A   1      19.893   2.479  -5.629  1.00  0.00           C
+HETATM   21  C   UNL A   1      18.709   1.922  -6.083  1.00  0.00           C
+HETATM   22  C   UNL A   1      20.522   2.007  -4.488  1.00  0.00           C
+HETATM   23  C   UNL A   1      18.137   0.864  -5.377  1.00  0.00           C
+HETATM   24  C   UNL A   1      19.950   0.949  -3.781  1.00  0.00           C
+HETATM   25  C   UNL A   1      18.757   0.378  -4.226  1.00  0.00           C
+HETATM   26  O   UNL A   1      16.973   0.313  -5.821  1.00  0.00           O
+HETATM   27  C   UNL A   1      15.772   1.040  -5.566  1.00  0.00           C
+HETATM   28  O   UNL A   1      18.210  -0.657  -3.528  1.00  0.00           O
+HETATM   29  H   UNL A   1      17.567  -1.116  -4.095  1.00  0.00           H
+ENDMDL
+END
