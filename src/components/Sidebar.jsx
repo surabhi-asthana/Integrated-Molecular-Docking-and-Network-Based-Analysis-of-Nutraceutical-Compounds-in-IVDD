@@ -8,8 +8,8 @@ import {
   Settings,
   Microscope,
   ChartNoAxesCombined,
+  Gauge,
 } from "lucide-react";
-
 import { NavLink } from "react-router-dom";
 
 const menuItems = [
@@ -19,6 +19,7 @@ const menuItems = [
   { name: "Pathways", path: "/pathways", icon: ChartNoAxesCombined },
   { name: "Molecular Network", path: "/network", icon: Network },
   { name: "Docking Analysis", path: "/docking", icon: Workflow },
+  { name: "Model Prediction", path: "/model-prediction", icon: Gauge },
   { name: "AI Interpretation", path: "/interpretation", icon: BrainCircuit },
 ];
 export default function Sidebar() {

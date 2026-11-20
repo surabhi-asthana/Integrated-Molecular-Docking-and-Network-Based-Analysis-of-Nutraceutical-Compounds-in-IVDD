@@ -1570,6 +1570,7 @@
     bottom: 20px;
   }
 }
+
 /* Network visualization */
 .network-toolbar {
   display: flex;
@@ -1640,3 +1641,41 @@
 .network-btn-primary:hover { background: #604b38; }
 .network-selected-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .hub-gene-active { background: #e5d3bd; border-color: #725b43; }
+
+/* Add to Model Prediction button */
+
+/* Add to Model Prediction button */
+.add-to-prediction-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 11px 16px;
+
+  background: #AD9273;
+  color: #FFFFFF;
+  border: 1px solid #AD9273;
+  border-radius: 10px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-to-prediction-btn:hover {
+  background: #897257;
+  border-color: #897257;
+  box-shadow: 0 4px 12px rgba(73, 59, 48, 0.12);
+  transform: translateY(-2px);
+}
+
+.add-to-prediction-btn:active {
+  transform: translateY(0);
+}
+
+.add-to-prediction-btn:focus-visible {
+  outline: 2px solid #AD9273;
+  outline-offset: 3px;
+}

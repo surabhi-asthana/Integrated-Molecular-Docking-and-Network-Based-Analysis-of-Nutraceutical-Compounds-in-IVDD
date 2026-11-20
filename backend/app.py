@@ -1,3 +1,12 @@
+import numpy as np
+import torch
+import torch.nn as nn
+
+from itertools import product
+from rdkit import Chem, RDLogger
+from rdkit.Chem import AllChem
+
+RDLogger.DisableLog("rdApp.*")
 import os
 import json
 import time
@@ -19,13 +28,183 @@ if not api_key:
 
 client = genai.Client(api_key=api_key)
 
+# -----------------------------------------
+# MLP MODEL
+# -----------------------------------------
 
+class TransferMLP(nn.Module):
+    def __init__(self, in_features=2469):
+        super().__init__()
+
+        self.fc1 = nn.Linear(in_features, 1024)
+        self.bn1 = nn.BatchNorm1d(1024)
+        self.relu1 = nn.ReLU()
+
+        self.fc2 = nn.Linear(1024, 256)
+        self.bn2 = nn.BatchNorm1d(256)
+        self.relu2 = nn.ReLU()
+
+        self.out = nn.Linear(256, 1)
+
+    def forward(self, x):
+        x = self.relu1(self.bn1(self.fc1(x)))
+        x = self.relu2(self.bn2(self.fc2(x)))
+        x = self.out(x)
+
+        return x.squeeze(-1)
+
+
+# -----------------------------------------
+# LOAD CHECKPOINT
+# -----------------------------------------
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# -----------------------------------------
+# PROTEIN SEQUENCE DATABASE
+# -----------------------------------------
+
+SEQUENCE_FILE = os.path.join(
+    BASE_DIR,
+    "data",
+    "protein_sequences.json"
+)
+
+MODEL_PATH = os.path.join(
+    BASE_DIR,
+    "model",
+    "arm2_full_finetuned.pt"
+)
+
+device = torch.device("cpu")
+
+activity_model = TransferMLP(in_features=2469)
+
+state_dict = torch.load(
+    MODEL_PATH,
+    map_location=device,
+    weights_only=True
+)
+
+activity_model.load_state_dict(state_dict)
+activity_model.to(device)
+activity_model.eval()
+
+print("Fine-tuned activity model loaded successfully.")
+# -----------------------------------------
+# FEATURE EXTRACTION
+# -----------------------------------------
+
+AA = "ACDEFGHIKLMNPQRSTVWY"
+
+DIPEP = {
+    a + b: i
+    for i, (a, b) in enumerate(product(AA, AA))
+}
+
+
+def get_protein_features(sequence):
+
+    sequence = "".join(
+        c for c in str(sequence).upper()
+        if c in AA
+    )
+
+    if len(sequence) < 2:
+        raise ValueError(
+            "Protein sequence must contain at least 2 valid amino acids."
+        )
+
+    comp = np.zeros(20)
+    dip = np.zeros(400)
+
+    for c in sequence:
+        comp[AA.index(c)] += 1
+
+    comp /= len(sequence)
+
+    for i in range(len(sequence) - 1):
+        dip[DIPEP[sequence[i:i + 2]]] += 1
+
+    dip /= len(sequence) - 1
+
+    return np.concatenate([
+        comp,
+        dip,
+        [np.log1p(len(sequence))]
+    ])
+
+
+def get_compound_fingerprint(smiles):
+
+    mol = Chem.MolFromSmiles(smiles)
+
+    if mol is None:
+        raise ValueError("Invalid compound SMILES.")
+
+    fingerprint = AllChem.GetMorganFingerprintAsBitVect(
+        mol,
+        2,
+        nBits=2048
+    )
+
+    return np.array(list(fingerprint), dtype=np.uint8)
+
+
+def extract_features(smiles, sequence):
+
+    compound_features = get_compound_fingerprint(smiles)
+
+    protein_features = get_protein_features(sequence)
+
+    features = np.hstack([
+        compound_features,
+        protein_features
+    ]).astype(np.float32)
+
+    if features.shape[0] != 2469:
+        raise ValueError("Unexpected feature vector size.")
+
+    return features
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({
         "message": "DiscNet AI backend is running!"
     })
+# -----------------------------------------
+# PROTEIN SEQUENCE API
+# -----------------------------------------
 
+@app.route("/api/protein-sequence/<gene>", methods=["GET"])
+def get_protein_sequence(gene):
+
+    gene = gene.upper()
+
+    try:
+        with open(SEQUENCE_FILE, "r", encoding="utf-8") as f:
+            database = json.load(f)
+
+    except (FileNotFoundError, json.JSONDecodeError):
+        return jsonify({
+            "success": False,
+            "error": "Protein sequence database is unavailable."
+        }), 500
+
+    protein = database.get(gene)
+
+    if not protein:
+        return jsonify({
+            "success": False,
+            "error": f"No sequence found for {gene}."
+        }), 404
+
+    return jsonify({
+        "success": True,
+        "gene": protein["gene"],
+        "protein_name": protein["protein_name"],
+        "accession": protein["accession"],
+        "sequence": protein["sequence"],
+        "length": protein["length"]
+    })
 
 @app.route("/api/ask-ivdd", methods=["POST"])
 def ask_ivdd():
@@ -234,6 +413,59 @@ Answer the user's question according to these instructions.
         return jsonify({
             "success": False,
             "error": str(e)
+        }), 500
+# -----------------------------------------
+# PREDICT ACTIVITY API
+# -----------------------------------------
+
+@app.route("/api/predict-activity", methods=["POST"])
+def predict_activity():
+
+    try:
+        data = request.get_json(silent=True) or {}
+
+        smiles = data.get("smiles", "").strip()
+        sequence = data.get("sequence", "").strip()
+
+        if not smiles or not sequence:
+            return jsonify({
+                "success": False,
+                "error": "Both SMILES and protein sequence are required."
+            }), 400
+
+        features = extract_features(smiles, sequence)
+
+        input_tensor = torch.tensor(
+            features,
+            dtype=torch.float32
+        ).unsqueeze(0).to(device)
+
+        with torch.no_grad():
+            prediction = activity_model(input_tensor)
+
+        predicted_activity = float(prediction.item())
+
+        return jsonify({
+            "success": True,
+            "predicted_pActivity": round(predicted_activity, 4),
+            "model_used": "arm2_full_finetuned",
+            "prediction_type": "pActivity (pChEMBL scale)"
+        })
+
+    except ValueError as e:
+
+        return jsonify({
+            "success": False,
+            "error": str(e)
+        }), 400
+
+    except Exception as e:
+
+        print("PREDICTION ERROR:", str(e))
+
+        return jsonify({
+            "success": False,
+            "error": "Prediction failed. Please check the backend logs."
         }), 500
 
 if __name__ == "__main__":

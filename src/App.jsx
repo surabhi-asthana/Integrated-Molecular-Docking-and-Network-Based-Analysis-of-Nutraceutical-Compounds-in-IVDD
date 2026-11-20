@@ -12,6 +12,7 @@ import Network from "./pages/Network";
 import CompoundProfile from "./pages/CompoundProfile";
 import "./App.css";
 import FloatingAI from "./components/FloatingAI";
+import ModelPrediction from "./pages/ModelPrediction";
 
 function Placeholder({ title }) {
   return (
@@ -55,6 +56,7 @@ export default function App() {
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/docking" element={<Docking />} />
+        <Route path="/model-prediction" element={<ModelPrediction />} />
         <Route
         path="/compounds/:compoundId"
         element={<CompoundProfile />}

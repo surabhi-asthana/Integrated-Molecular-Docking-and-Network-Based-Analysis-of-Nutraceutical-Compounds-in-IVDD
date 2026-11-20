@@ -1,280 +1,9 @@
 import { useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Search, Dna, CheckCircle2, Clock3 } from "lucide-react";
 import "./Targets.css";
+import { RESEARCH_TARGETS } from "../data/proteins";
 
-const proteins = [
-  // INFLAMMATION
-  {
-    name: "Tumor Necrosis Factor Alpha",
-    gene: "TNF",
-    pdb: "2AZ5",
-    category: "Inflammation",
-    role: "Promotes inflammatory responses and contributes to intervertebral disc cell damage.",
-    docked: true,
-  },
-  {
-    name: "Interleukin 6",
-    gene: "IL6",
-    pdb: "1ALU",
-    category: "Inflammation",
-    role: "A pro-inflammatory cytokine associated with inflammation and disc degeneration.",
-    docked: true,
-  },
-  {
-    name: "Interleukin 1 Beta",
-    gene: "IL1B",
-    pdb: "8C3U",
-    category: "Inflammation",
-    role: "Promotes inflammatory signalling and matrix-degrading enzyme production.",
-    docked: true,
-  },
-  {
-    name: "NLR Family Pyrin Domain Containing 3",
-    gene: "NLRP3",
-    pdb: "9HG4",
-    category: "Inflammation",
-    role: "Forms the NLRP3 inflammasome, which contributes to inflammatory responses.",
-    docked: true,
-  },
-  {
-    name: "Myeloid Differentiation Factor 2",
-    gene: "LY96",
-    pdb: "4G8A",
-    category: "Inflammation",
-    role: "Participates in innate immune signalling through the TLR4 receptor complex.",
-    docked: true,
-  },
-  {
-    name: "Nuclear Factor Kappa B Subunit 1",
-    gene: "NFKB1",
-    pdb: "Not added",
-    category: "Inflammation",
-    role: "Regulates inflammatory gene expression and plays a central role in NF-κB signalling.",
-    docked: false,
-  },
-
-  // SIGNALLING
-  {
-    name: "Inhibitor of Nuclear Factor Kappa B Kinase Subunit Beta",
-    gene: "IKBKB",
-    pdb: "4KIK",
-    category: "Signalling",
-    role: "A key kinase involved in NF-κB inflammatory signalling.",
-    docked: true,
-  },
-  {
-    name: "Signal Transducer and Activator of Transcription 3",
-    gene: "STAT3",
-    pdb: "6NJS",
-    category: "Signalling",
-    role: "Regulates cellular responses to cytokines and inflammatory signals.",
-    docked: true,
-  },
-  {
-    name: "Hypoxia Inducible Factor 1 Alpha",
-    gene: "HIF1A",
-    pdb: "4ZPR",
-    category: "Hypoxia",
-    role: "Regulates cellular adaptation to the low-oxygen environment of the intervertebral disc.",
-    docked: false,
-  },
-  {
-    name: "Sirtuin 1",
-    gene: "SIRT1",
-    pdb: "4I5I",
-    category: "Signalling",
-    role: "Associated with cellular stress responses, inflammation and tissue homeostasis.",
-    docked: false,
-  },
-  {
-    name: "Mitogen Activated Protein Kinase 1",
-    gene: "MAPK1",
-    pdb: "Not added",
-    category: "Signalling",
-    role: "Participates in MAPK/ERK signalling and regulates cellular responses.",
-    docked: false,
-  },
-  {
-    name: "AKT Serine/Threonine Kinase 1",
-    gene: "AKT1",
-    pdb: "Not added",
-    category: "Signalling",
-    role: "Regulates cell survival, metabolism and growth signalling.",
-    docked: false,
-  },
-
-  // MATRIX DEGRADATION
-  {
-    name: "Matrix Metalloproteinase 7",
-    gene: "MMP7",
-    pdb: "7WXX",
-    category: "Matrix Degradation",
-    role: "An extracellular matrix-degrading enzyme involved in tissue remodelling.",
-    docked: true,
-  },
-  {
-    name: "Matrix Metalloproteinase 13",
-    gene: "MMP13",
-    pdb: "2OW9",
-    category: "Matrix Degradation",
-    role: "Degrades collagen and contributes to extracellular matrix breakdown.",
-    docked: true,
-  },
-  {
-    name: "ADAM Metallopeptidase with Thrombospondin Type 1 Motif 5",
-    gene: "ADAMTS5",
-    pdb: "6YJM",
-    category: "Matrix Degradation",
-    role: "An aggrecan-degrading enzyme associated with loss of disc matrix integrity.",
-    docked: true,
-  },
-  {
-    name: "Matrix Metalloproteinase 19",
-    gene: "MMP19",
-    pdb: "AlphaFold Q99542",
-    category: "Matrix Degradation",
-    role: "A matrix metalloproteinase associated with extracellular matrix remodelling.",
-    docked: false,
-  },
-  {
-    name: "Matrix Metalloproteinase 1",
-    gene: "MMP1",
-    pdb: "Not added",
-    category: "Matrix Degradation",
-    role: "Degrades extracellular matrix components, including collagen.",
-    docked: false,
-  },
-  {
-    name: "Matrix Metalloproteinase 3",
-    gene: "MMP3",
-    pdb: "Not added",
-    category: "Matrix Degradation",
-    role: "Contributes to extracellular matrix breakdown and tissue remodelling.",
-    docked: false,
-  },
-
-  // EXTRACELLULAR MATRIX
-  {
-    name: "SRY-Box Transcription Factor 9",
-    gene: "SOX9",
-    pdb: "4EUW",
-    category: "Extracellular Matrix",
-    role: "Regulates the expression of cartilage-related extracellular matrix components.",
-    docked: false,
-  },
-  {
-    name: "Collagen Type II Alpha 1 Chain",
-    gene: "COL2A1",
-    pdb: "6JEC",
-    category: "Extracellular Matrix",
-    role: "Encodes type II collagen, an important structural component of cartilage-like tissue.",
-    docked: false,
-  },
-  {
-    name: "Aggrecan",
-    gene: "ACAN",
-    pdb: "9DFF",
-    category: "Extracellular Matrix",
-    role: "A major extracellular matrix proteoglycan that helps maintain disc hydration and structure.",
-    docked: false,
-  },
-  {
-    name: "Collagen Type I Alpha 1 Chain",
-    gene: "COL1A1",
-    pdb: "Not added",
-    category: "Extracellular Matrix",
-    role: "Encodes type I collagen, a structural component of connective tissue.",
-    docked: false,
-  },
-
-  // APOPTOSIS
-  {
-    name: "Caspase 3",
-    gene: "CASP3",
-    pdb: "Not added",
-    category: "Apoptosis",
-    role: "An executioner caspase involved in programmed cell death.",
-    docked: false,
-  },
-  {
-    name: "BCL2 Associated X Protein",
-    gene: "BAX",
-    pdb: "Not added",
-    category: "Apoptosis",
-    role: "Promotes apoptosis through mitochondrial signalling.",
-    docked: false,
-  },
-  {
-    name: "BCL2 Apoptosis Regulator",
-    gene: "BCL2",
-    pdb: "Not added",
-    category: "Apoptosis",
-    role: "Regulates cell survival by inhibiting apoptotic processes.",
-    docked: false,
-  },
-
-  // OXIDATIVE STRESS
-  {
-    name: "Superoxide Dismutase 1",
-    gene: "SOD1",
-    pdb: "Not added",
-    category: "Oxidative Stress",
-    role: "Helps protect cells against oxidative damage by neutralizing superoxide radicals.",
-    docked: false,
-  },
-  {
-    name: "Superoxide Dismutase 2",
-    gene: "SOD2",
-    pdb: "Not added",
-    category: "Oxidative Stress",
-    role: "A mitochondrial antioxidant enzyme involved in reactive oxygen species regulation.",
-    docked: false,
-  },
-  {
-    name: "Nuclear Factor Erythroid 2 Related Factor 2",
-    gene: "NFE2L2",
-    pdb: "Not added",
-    category: "Oxidative Stress",
-    role: "A transcription factor that regulates cellular antioxidant responses.",
-    docked: false,
-  },
-
-  // HYPOXIA
-  {
-    name: "Vascular Endothelial Growth Factor A",
-    gene: "VEGFA",
-    pdb: "Not added",
-    category: "Hypoxia",
-    role: "Regulates angiogenesis and is associated with hypoxia-related responses.",
-    docked: false,
-  },
-
-  // CELLULAR SENESCENCE
-  {
-    name: "Tumor Protein P53",
-    gene: "TP53",
-    pdb: "Not added",
-    category: "Cellular Senescence",
-    role: "Regulates cell-cycle arrest, DNA damage responses and cellular senescence.",
-    docked: false,
-  },
-  {
-    name: "Cyclin Dependent Kinase Inhibitor 1A",
-    gene: "CDKN1A",
-    pdb: "Not added",
-    category: "Cellular Senescence",
-    role: "Encodes p21, a regulator of cell-cycle arrest and senescence.",
-    docked: false,
-  },
-  {
-    name: "Cyclin Dependent Kinase Inhibitor 2A",
-    gene: "CDKN2A",
-    pdb: "Not added",
-    category: "Cellular Senescence",
-    role: "Encodes cell-cycle regulatory proteins associated with senescence.",
-    docked: false,
-  },
-];
 
 const categories = [
   "All",
@@ -289,13 +18,22 @@ const categories = [
 ];
 
 export default function Targets() {
+   const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [status, setStatus] = useState("All");
 const [selectedProtein, setSelectedProtein] = useState(null);
+const handleUseForPrediction = (protein) => {
+  navigate("/model-prediction", {
+    state: {
+      proteinGene: protein.gene,
+      proteinName: protein.name,
+    },
+  });
+};
 
   const filteredProteins = useMemo(() => {
-    return proteins.filter((protein) => {
+    return RESEARCH_TARGETS .filter((protein) => {
       const matchesSearch =
         protein.name.toLowerCase().includes(search.toLowerCase()) ||
         protein.gene.toLowerCase().includes(search.toLowerCase()) ||
@@ -312,13 +50,13 @@ const [selectedProtein, setSelectedProtein] = useState(null);
       return matchesSearch && matchesCategory && matchesStatus;
     });
   }, [search, category, status]);
-  const totalProteins = proteins.length;
+  const totalProteins = RESEARCH_TARGETS .length;
 
-const dockedCount = proteins.filter(
+const dockedCount = RESEARCH_TARGETS .filter(
   (protein) => protein.docked
 ).length;
 
-const catalogueCount = proteins.filter(
+const catalogueCount = RESEARCH_TARGETS .filter(
   (protein) => !protein.docked
 ).length;
 
@@ -439,6 +177,12 @@ const catalogueCount = proteins.filter(
   }}
 >
   View Protein Details →
+</button>
+<button
+  className="use-for-prediction-btn"
+  onClick={() => handleUseForPrediction(protein)}
+>
+  Use for Prediction →
 </button>
           </article>
         ))}

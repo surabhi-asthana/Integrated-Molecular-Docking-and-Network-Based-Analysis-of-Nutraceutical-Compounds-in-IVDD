@@ -426,3 +426,45 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Use for Prediction button */
+.use-for-prediction-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  margin-top: 10px;
+  padding: 11px 14px;
+
+  background: #493B30;
+  color: #FAF7F1;
+
+  border: 1px solid #493B30;
+  border-radius: 9px;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.use-for-prediction-btn:hover {
+  background: #897257;
+  border-color: #897257;
+  box-shadow: 0 4px 12px rgba(73, 59, 48, 0.15);
+  transform: translateY(-2px);
+}
+
+.use-for-prediction-btn:active {
+  transform: translateY(0);
+}
+
+.use-for-prediction-btn:focus-visible {
+  outline: 2px solid #AD9273;
+  outline-offset: 3px;
+}
